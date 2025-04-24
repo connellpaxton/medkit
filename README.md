@@ -107,7 +107,7 @@ The Request has a 16-byte header:
 +-------+-----------+--------------+------+--------------------+
 | Field | REQ MAGIC | Message Type |  ID  | Type-Specific Data |
 +-------+-----------+--------------+------+--------------------+
-        0       4              6      8                   15
+        0       4                  6      8                   15
 ```
 and the Response:
 ```
@@ -116,7 +116,7 @@ and the Response:
 +-------+-----------+--------------+------+--------------------+
 | Field | RES MAGIC |  Status Code |  ID  | Type-Specific Data |
 +-------+-----------+--------------+------+--------------------+
-        0       4              6      8
+        0           4              6      8                   15
 ```
 The fields are as follows:
 
