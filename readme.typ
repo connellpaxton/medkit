@@ -1,8 +1,14 @@
-# medkit - Manually Embedded Device Konfiguration and Integration Technology
+#set document(
+  title: [medkit - Manually Embedded Device Konfiguration and Integration Technology],
+  author: "Conál Paxton",
+  description: "design document for medkit"
+)
+
+= *medkit* - Manually Embedded Device Konfiguration and Integration Technology
 
 Name is negotiable
 
-## Motivation
+= Motivation
 
 Medical devices are extremely expensive, with a huge cost to the populace [cdc-medical-debt-source],
 including a very large population of Americans who do not seek, or adhere to, medical treatment as a
@@ -15,23 +21,23 @@ the possibility of interoperation, if they even have any hardware to do so.
 
 To solve this problem, this document sets out two designs:
 
-  I) The Protocol - a specification for communication over a network of connected medical devices.
+- *I) The Protocol* - a specification for communication over a network of connected medical devices.
 
-  II) The Bridge Device - a device that, once manually installed on an arbitrary, well-specified
+- *II) The Bridge Device* - a device that, once manually installed on an arbitrary, well-specified
     host device and allows it to interact with the network by implementing The Protocol (I).
 
-# The Protocol
+= (I) The Protocol
 
 The protocol specifies the interactions between several wearable medical devices, specifically
 three main categories:
-- **Sensor Devices**: devices that measure biometrics and transmit them to the network.
-- **Delivery Devices**: devices that can be commanded to perform a set of medical tasks in accordance with a delivery policy
-- **Control Devices**: devices communicating delivery policy details and managing information accumulation and exchange across
+- *Sensor Devices*: devices that measure biometrics and transmit them to the network.
+- *Delivery Devices*: devices that can be commanded to perform a set of medical tasks in accordance with a delivery policy
+- *Control Devices*: devices communicating delivery policy details and managing information accumulation and exchange across
   the network as a (locally) central point.
 
 The primary communication over the network falls under these general categories (with exceptions):
-  - devices implementing **Sensor Device** behavior communicating with a **Control Devices** to send biomedical information
-  - devices implementing **Control Device** behavior communicating with a **Delivery Device** to change a delivery policy.
+  - devices implementing *Sensor Device* behavior communicating with a *Control Devices* to send biomedical information
+  - devices implementing *Control Device* behavior communicating with a *Delivery Device* to change a delivery policy.
 
 It is also recognized that it is unreasonable for a design to be adopted broadly by manufactorers,
 or previous designs lacking in the hardware to communicate with the design without major change in
@@ -40,15 +46,15 @@ hardware interfaces as software modules, which will allow an easier process of b
 database of reusable device configurations. This concept will be leveraged in section (II), where a device
 design is proposed that will allow a large class of button-operated devices to be integrated almost natively.
 
-### Protocol Structure
+== Protocol Structure
 
 To explore the organization of the network, we will chose the example of a wearable network designed for
 a person with diabetes. A common configuration would be the following:
 
 ```
-                                   glucose data
-<Sensor: Continuous Glucose Monitor> --------> <Control: Delivery Policy Controller> --------> <Delivery: Insulin Pump>
-                                                                                delivery guidance
+            glucose data
+<Sensor: CGM> --------> <Control: Delivery Policy> --------> <Delivery: Insulin Pump>
+                                                delivery guidance
 ```
 
 A continuous glucose monitor connected to a user reports glucose levels to a controller.
@@ -60,7 +66,7 @@ actual real-time delivery in its own modelling, in which case we end up with the
 
 ```
               insulin delivery data
-<Sensor: Insulin Pump> ------> <Delivery Policy Controller>
+<Sensor: Insulin Pump> ------> <Control: Delivery Policy>
 ```
 
 With this demonstration, it is clear that a very flexible protocol is needed, with devices not fitting into
@@ -74,7 +80,7 @@ In an ideally interoperable configuration such as this, the drug delivery polcy 
 glucose monitor could all be developed seperately and interchanged, allowing a modular and easily upgradable
 medical device system
 
-## Specficiation
+== Specficiation
 
 The Protocol is designed to operate in OSI Model Level 5 and 6 [osi model specification].
 In a hypothetical larger, commerical stage of the project, a definitive protocol would have to be solidified.
@@ -82,15 +88,15 @@ The device implemented in (II) will be done over Wi-Fi, for example, but a more 
 use bluetooth due to the limited range of connections, wifi connection not needing to be configured manually, etc.
 
 Each connection is split into 3 states:
-- **Phase I: Authentication**: The device connects to a nearby device and exchanges initial information used for 
+- *Phase I: Authentication*: The device connects to a nearby device and exchanges initial information used for 
       encrpyting and identifying future messages
-- **Phase II: Configuration**: Period of initial communication where details such as sampling rates, feature ability
+- *Phase II: Configuration*: Period of initial communication where details such as sampling rates, feature ability
       and parameter options enumerated and agreed upon.
-- **Phase III: Steady State Operation**: Normal mode of operaton where delivery commands are processed by the system.
+- *Phase III: Steady State Operation*: Normal mode of operaton where delivery commands are processed by the system.
 
-## Phase I Authentication
-## Phase II Configuration
-## Phase III Steady-State Operation 
+== Phase I Authentication
+== Phase II Configuration
+== Phase III Steady-State Operation 
 Once Authentication and configuration is finished, the devices
 communicate using packets of the following two forms:
 - Requests: sent by devices to initiate a stream of communication
@@ -190,11 +196,11 @@ will be able to query values reported by sesnors. This could be useful in the ca
 have a histograph display. 
 
 
-#### ERROR Codes
+==== ERROR Codes
 EUNSUPPORTEDACTION - A command has been requested that does not fit the listed capabilities of the device
 
 
-# Considerations
+= Considerations
 Before an actual release could be made with this software, a much more robust cryptographic approach
 would obviously have to happen. The current risk of an attack where an attacker is able to get within
 close range bluetooth and drastically threatening a user's health and safety, or upload malicious drivers
