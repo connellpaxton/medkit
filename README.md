@@ -1,4 +1,3 @@
-qh4os@DEADBEEFCAFE:~/medkit/ > cat README.md
 # medkit - Manually Embedded Device Konfiguration and Integration Technology
 
 Name is negotiable
