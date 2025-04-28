@@ -1,0 +1,68 @@
+.TH "medkit::NetworkInterfaceTrait< SocketHandle, SocketConnectionInfo >" 3 "Version medkit" "MedKit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+medkit::NetworkInterfaceTrait< SocketHandle, SocketConnectionInfo >
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNetworkInterfaceTrait\fP (const int &fd_)"
+.br
+.ti -1c
+.RI "\fBResult\fP \fBconnect\fP (const \fBSocketConnectionInfo\fP &conn_info)"
+.br
+.ti -1c
+.RI "\fBResult\fP \fBsend\fP (const uint8_t data, uint32_t len)"
+.br
+.ti -1c
+.RI "\fBResult\fP \fBread\fP (uint8_t *memory, uint32_t n, uint32_t *len)"
+.br
+.ti -1c
+.RI "\fBmedkit::Result\fP \fBconnect\fP (const \fBSocketConnectionInfo\fP &conn_info)"
+.br
+.ti -1c
+.RI "\fBmedkit::Result\fP \fBsend\fP (const uint8_t *data, uint32_t len)"
+.br
+.ti -1c
+.RI "\fBmedkit::Result\fP \fBread\fP (uint8_t *memory, uint32_t n, uint32_t *len)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+uses the Unix TCP socket to implement a medkit-compliant network object 
+.PP
+Definition at line \fB19\fP of file \fBexample\&.cpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBmedkit::NetworkInterfaceTrait\fP< \fBSocketHandle\fP, \fBSocketConnectionInfo\fP >::NetworkInterfaceTrait (const int & fd_)\fR [inline]\fP"
+
+.PP
+Definition at line \fB20\fP of file \fBexample\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBmedkit::Result\fP \fBmedkit::NetworkInterfaceTrait\fP< \fBSocketHandle\fP, \fBSocketConnectionInfo\fP >::connect (const \fBSocketConnectionInfo\fP & conn_info)"
+
+.SS "\fBResult\fP \fBmedkit::NetworkInterfaceTrait\fP< \fBSocketHandle\fP, \fBSocketConnectionInfo\fP >::connect (const \fBSocketConnectionInfo\fP & conn_info)\fR [inline]\fP"
+
+.PP
+Definition at line \fB21\fP of file \fBexample\&.cpp\fP\&.
+.SS "\fBmedkit::Result\fP \fBmedkit::NetworkInterfaceTrait\fP< \fBSocketHandle\fP, \fBSocketConnectionInfo\fP >::read (uint8_t * memory, uint32_t n, uint32_t * len)"
+
+.SS "\fBResult\fP \fBmedkit::NetworkInterfaceTrait\fP< \fBSocketHandle\fP, \fBSocketConnectionInfo\fP >::read (uint8_t * memory, uint32_t n, uint32_t * len)\fR [inline]\fP"
+
+.PP
+Definition at line \fB27\fP of file \fBexample\&.cpp\fP\&.
+.SS "\fBmedkit::Result\fP \fBmedkit::NetworkInterfaceTrait\fP< \fBSocketHandle\fP, \fBSocketConnectionInfo\fP >::send (const uint8_t * data, uint32_t len)"
+
+.SS "\fBResult\fP \fBmedkit::NetworkInterfaceTrait\fP< \fBSocketHandle\fP, \fBSocketConnectionInfo\fP >::send (const uint8_t data, uint32_t len)\fR [inline]\fP"
+
+.PP
+Definition at line \fB24\fP of file \fBexample\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MedKit from the source code\&.

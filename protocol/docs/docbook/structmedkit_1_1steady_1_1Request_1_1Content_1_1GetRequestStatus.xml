@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus" xml:lang="en-US">
+<title>medkit::steady::Request::Content::GetRequestStatus Struct Reference</title>
+<indexterm><primary>medkit::steady::Request::Content::GetRequestStatus</primary></indexterm>
+<para>
+<computeroutput>#include &lt;steady.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for medkit::steady::Request::Content::GetRequestStatus:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus_1ae9a232e693442fd913c8b46375968c32">request_number</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus_1af623748d6db019a8d72ee6fca89e9ee0">resv</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00072">72</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus_1ae9a232e693442fd913c8b46375968c32"/><section>
+    <title>request_number</title>
+<indexterm><primary>request_number</primary><secondary>medkit::steady::Request::Content::GetRequestStatus</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content::GetRequestStatus</primary><secondary>request_number</secondary></indexterm>
+<para><computeroutput>uint32_t medkit::steady::Request::Content::GetRequestStatus::request_number</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00073">73</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus_1af623748d6db019a8d72ee6fca89e9ee0"/><section>
+    <title>resv</title>
+<indexterm><primary>resv</primary><secondary>medkit::steady::Request::Content::GetRequestStatus</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content::GetRequestStatus</primary><secondary>resv</secondary></indexterm>
+<para><computeroutput>uint32_t medkit::steady::Request::Content::GetRequestStatus::resv</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00074">74</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+lib/<link linkend="_steady_8hpp">steady.hpp</link></section>
+</section>

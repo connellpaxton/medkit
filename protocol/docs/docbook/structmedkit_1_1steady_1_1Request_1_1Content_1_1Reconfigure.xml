@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure" xml:lang="en-US">
+<title>medkit::steady::Request::Content::Reconfigure Struct Reference</title>
+<indexterm><primary>medkit::steady::Request::Content::Reconfigure</primary></indexterm>
+<para>
+<computeroutput>#include &lt;steady.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for medkit::steady::Request::Content::Reconfigure:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure_1aab885e23a8c3e4612fbf46cdb85c09ea">must_reauthenticate</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure_1aeae8dfcd8c2b08fed5a7cbe2a78f431e">resv</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00054">54</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure_1aab885e23a8c3e4612fbf46cdb85c09ea"/><section>
+    <title>must_reauthenticate</title>
+<indexterm><primary>must_reauthenticate</primary><secondary>medkit::steady::Request::Content::Reconfigure</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content::Reconfigure</primary><secondary>must_reauthenticate</secondary></indexterm>
+<para><computeroutput>uint32_t medkit::steady::Request::Content::Reconfigure::must_reauthenticate</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00056">56</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure_1aeae8dfcd8c2b08fed5a7cbe2a78f431e"/><section>
+    <title>resv</title>
+<indexterm><primary>resv</primary><secondary>medkit::steady::Request::Content::Reconfigure</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content::Reconfigure</primary><secondary>resv</secondary></indexterm>
+<para><computeroutput>uint32_t medkit::steady::Request::Content::Reconfigure::resv</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00057">57</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+lib/<link linkend="_steady_8hpp">steady.hpp</link></section>
+</section>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_config_8hpp_source" xml:lang="en-US">
+<title>config.hpp</title>
+<indexterm><primary>lib/config.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_config_8hpp_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;stdint.h&gt;</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00003"/>00003 <emphasis role="preprocessor">#include&#32;&lt;stddef.h&gt;</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_common_8hpp">common.hpp</link>&quot;</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00005"/>00005 
+<anchor xml:id="_config_8hpp_source_1l00006"/>00006 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacemedkit">medkit</link>&#32;{
+<anchor xml:id="_config_8hpp_source_1l00007"/>00007 <emphasis role="comment"></emphasis>
+<anchor xml:id="_config_8hpp_source_1l00008"/>00008 <emphasis role="comment">/**</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00009"/>00009 <emphasis role="comment">&#32;*&#32;@brief&#32;limited&#32;to&#32;2^(sizeof(size_type)&#32;characters</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00010"/>00010 <emphasis role="comment">&#32;*&#32;allows&#32;lookups&#32;to&#32;be&#32;faster&#32;because&#32;length&#32;is&#32;a&#32;heuristic&#32;*/</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00011"/>00011 <emphasis role="keyword">template</emphasis>&lt;<emphasis role="keyword">typename</emphasis>&#32;<emphasis role="keywordtype">size_t</emphasis>ype&gt;
+<anchor xml:id="_config_8hpp_source_1l00012"/><link linkend="_structmedkit_1_1StringTable">00012</link> <emphasis role="keyword">struct&#32;</emphasis><link linkend="_structmedkit_1_1StringTable">StringTable</link>&#32;{
+<anchor xml:id="_config_8hpp_source_1l00013"/><link linkend="_structmedkit_1_1StringTable_1a7da27d6bd3ca1fbbb59afdb21fb98956">00013</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">size_t</emphasis>&#32;<link linkend="_structmedkit_1_1StringTable_1a7da27d6bd3ca1fbbb59afdb21fb98956">n_entries</link>;
+<anchor xml:id="_config_8hpp_source_1l00014"/><link linkend="_structmedkit_1_1StringTable_1ac46dcb376528029e34235e56ae2a366d">00014</link> &#32;&#32;&#32;&#32;uint8_t*&#32;<link linkend="_structmedkit_1_1StringTable_1ac46dcb376528029e34235e56ae2a366d">lengths</link>;
+<anchor xml:id="_config_8hpp_source_1l00015"/><link linkend="_structmedkit_1_1StringTable_1a52f0a0d815e8f4f7375df6ab046c0474">00015</link> &#32;&#32;&#32;&#32;uint8_t*&#32;<link linkend="_structmedkit_1_1StringTable_1a52f0a0d815e8f4f7375df6ab046c0474">strs</link>;
+<anchor xml:id="_config_8hpp_source_1l00016"/>00016 <emphasis role="comment"></emphasis>
+<anchor xml:id="_config_8hpp_source_1l00017"/>00017 <emphasis role="comment">&#32;&#32;&#32;&#32;/**&#32;@breif</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00018"/>00018 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;0&#32;&#32;&#32;sizeof(size_type)&#32;&#32;*&#32;2&#32;&#32;+&#32;&#32;&#32;&#32;n_entries&#32;+&#32;&#32;&#32;&#32;sum(lengths)</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00019"/>00019 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;[total_length][n_entries][lengths.....][entries.....]</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00020"/>00020 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00021"/><link linkend="_structmedkit_1_1StringTable_1acc3e473fb41c22ef5f3b4763af8ad67b">00021</link> &#32;&#32;&#32;&#32;uint8_t*&#32;<link linkend="_structmedkit_1_1StringTable_1acc3e473fb41c22ef5f3b4763af8ad67b">data</link>(<emphasis role="keywordtype">size_t</emphasis>&amp;&#32;total_size)&#32;{
+<anchor xml:id="_config_8hpp_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;total_size&#32;=&#32;0;
+<anchor xml:id="_config_8hpp_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(<emphasis role="keywordtype">size_t</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="_structmedkit_1_1StringTable_1a7da27d6bd3ca1fbbb59afdb21fb98956">n_entries</link>;&#32;i++)&#32;{
+<anchor xml:id="_config_8hpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;total_size&#32;+=&#32;<link linkend="_structmedkit_1_1StringTable_1ac46dcb376528029e34235e56ae2a366d">lengths</link>[i];
+<anchor xml:id="_config_8hpp_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_config_8hpp_source_1l00026"/>00026 
+<anchor xml:id="_config_8hpp_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;account&#32;for&#32;the&#32;total_length&#32;of&#32;section&#32;(so&#32;it&#32;can&#32;be&#32;skipped),</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00028"/>00028 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;size&#32;of&#32;the&#32;lengths&#32;and&#32;content&#32;arrays,&#32;as&#32;well&#32;as&#32;a&#32;total_size&#32;for&#32;the&#32;number&#32;of&#32;entries&#32;*/</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;total_size&#32;*=&#32;2;
+<anchor xml:id="_config_8hpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;total_size&#32;+=&#32;2&#32;*&#32;<emphasis role="keyword">sizeof</emphasis>(size_type);
+<anchor xml:id="_config_8hpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint8_t*&#32;ret&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;uint8_t[total_size];
+<anchor xml:id="_config_8hpp_source_1l00032"/>00032 
+<anchor xml:id="_config_8hpp_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">auto</emphasis>*&#32;types&#32;=&#32;<emphasis role="keyword">reinterpret_cast&lt;</emphasis>size_type*<emphasis role="keyword">&gt;</emphasis>(ret);
+<anchor xml:id="_config_8hpp_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;types[0]&#32;=&#32;<link linkend="_structmedkit_1_1StringTable_1ac46dcb376528029e34235e56ae2a366d">lengths</link>;
+<anchor xml:id="_config_8hpp_source_1l00035"/>00035 
+<anchor xml:id="_config_8hpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ret;
+<anchor xml:id="_config_8hpp_source_1l00037"/>00037 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_config_8hpp_source_1l00038"/>00038 };
+<anchor xml:id="_config_8hpp_source_1l00039"/>00039 
+<anchor xml:id="_config_8hpp_source_1l00040"/>00040 
+<anchor xml:id="_config_8hpp_source_1l00041"/>00041 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;<emphasis role="keywordtype">size_t</emphasis>ype&gt;
+<anchor xml:id="_config_8hpp_source_1l00042"/><link linkend="_structmedkit_1_1ConfigurationProfileRequest">00042</link> <emphasis role="keyword">struct&#32;</emphasis><link linkend="_structmedkit_1_1ConfigurationProfileRequest">ConfigurationProfileRequest</link>&#32;{
+<anchor xml:id="_config_8hpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;format&#32;is&#32;hard&#32;to&#32;easily&#32;encode&#32;in&#32;a&#32;C++&#32;compile-time</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00044"/>00044 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;way&#32;as&#32;it&#32;relies&#32;upon&#32;FAMs&#32;(easily&#32;indexable)&#32;*/</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00045"/><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a8a0aa2d805e84bd772a79bd05cfc8d52">00045</link> &#32;&#32;&#32;&#32;<link linkend="_namespacemedkit_1aa7af9648005314e8fe667f7ea372c0b0">Role</link>&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a8a0aa2d805e84bd772a79bd05cfc8d52">role</link>&#32;:&#32;8;
+<anchor xml:id="_config_8hpp_source_1l00046"/><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">00046</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">using&#32;</emphasis><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link>&#32;=&#32;<link linkend="_structmedkit_1_1StringTable">StringTable&lt;size_type&gt;</link>;
+<anchor xml:id="_config_8hpp_source_1l00047"/><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1ab30748830abe53e46da49f34281cae4b">00047</link> &#32;&#32;&#32;&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link>&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1ab30748830abe53e46da49f34281cae4b">available_feature_list</link>;
+<anchor xml:id="_config_8hpp_source_1l00048"/><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a42942a72c21314806b69f54275ae9fba">00048</link> &#32;&#32;&#32;&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link>&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a42942a72c21314806b69f54275ae9fba">required_feature_list</link>;
+<anchor xml:id="_config_8hpp_source_1l00049"/><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a8171d491f6d11911e88f27de0431bb6c">00049</link> &#32;&#32;&#32;&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link>&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a8171d491f6d11911e88f27de0431bb6c">parameter_list</link>;
+<anchor xml:id="_config_8hpp_source_1l00050"/>00050 
+<anchor xml:id="_config_8hpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;flattens&#32;the&#32;data&#32;*/</emphasis>
+<anchor xml:id="_config_8hpp_source_1l00052"/><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1adf84cf0a744546bd7ba26e44dc329406">00052</link> &#32;&#32;&#32;&#32;uint8_t*&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1adf84cf0a744546bd7ba26e44dc329406">data</link>(<emphasis role="keywordtype">size_t</emphasis>&amp;&#32;total_size)&#32;{
+<anchor xml:id="_config_8hpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;size_type&#32;avail_size;
+<anchor xml:id="_config_8hpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1ab30748830abe53e46da49f34281cae4b">available_feature_list</link>.data(&amp;avail_size);
+<anchor xml:id="_config_8hpp_source_1l00055"/>00055 
+<anchor xml:id="_config_8hpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;size_type&#32;req_size;
+<anchor xml:id="_config_8hpp_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a42942a72c21314806b69f54275ae9fba">required_feature_list</link>.data(&amp;req_size);
+<anchor xml:id="_config_8hpp_source_1l00058"/>00058 
+<anchor xml:id="_config_8hpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;size_type&#32;param_size;
+<anchor xml:id="_config_8hpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a8171d491f6d11911e88f27de0431bb6c">parameter_list</link>.data(&amp;param_size);
+<anchor xml:id="_config_8hpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;total_size&#32;=&#32;avail_size,&#32;param_size;
+<anchor xml:id="_config_8hpp_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint8_t*&#32;ret&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;uint8_t[total_size];
+<anchor xml:id="_config_8hpp_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ret;
+<anchor xml:id="_config_8hpp_source_1l00064"/>00064 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_config_8hpp_source_1l00065"/>00065 };
+<anchor xml:id="_config_8hpp_source_1l00066"/>00066 
+<anchor xml:id="_config_8hpp_source_1l00067"/>00067 }
+</programlisting></section>

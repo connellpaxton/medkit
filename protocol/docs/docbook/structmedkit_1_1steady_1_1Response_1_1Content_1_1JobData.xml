@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData" xml:lang="en-US">
+<title>medkit::steady::Response::Content::JobData Struct Reference</title>
+<indexterm><primary>medkit::steady::Response::Content::JobData</primary></indexterm>
+<para>
+<computeroutput>#include &lt;steady.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for medkit::steady::Response::Content::JobData:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2">Status</link> { <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2ab7c55417b5bd16a8d3023bfe05a53ab9">KILLED</link>
+, <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2a92c7d0c41c3ad14b479861e47ae9b06a">DONE</link>
+, <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2a80952da847fec76b482f0051afa7d89f">RUNNING</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2">medkit::steady::Response::Content::JobData::Status</link> <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1ade4c0cc9a243c05bf651d46eadb82c4d">status</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1ad63ab799d640bbc0e8e8b323b767a79d">exit_code</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00101">101</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2"/><section>
+    <title>Status</title>
+<indexterm><primary>Status</primary><secondary>medkit::steady::Response::Content::JobData</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response::Content::JobData</primary><secondary>Status</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2">medkit::steady::Response::Content::JobData::Status</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>KILLED</primary><secondary>medkit::steady::Response::Content::JobData</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response::Content::JobData</primary><secondary>KILLED</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2ab7c55417b5bd16a8d3023bfe05a53ab9"/>KILLED</entry><entry></entry></row><row><entry><indexterm><primary>DONE</primary><secondary>medkit::steady::Response::Content::JobData</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response::Content::JobData</primary><secondary>DONE</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2a92c7d0c41c3ad14b479861e47ae9b06a"/>DONE</entry><entry></entry></row><row><entry><indexterm><primary>RUNNING</primary><secondary>medkit::steady::Response::Content::JobData</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response::Content::JobData</primary><secondary>RUNNING</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2a80952da847fec76b482f0051afa7d89f"/>RUNNING</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00102">102</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1ad63ab799d640bbc0e8e8b323b767a79d"/><section>
+    <title>exit_code</title>
+<indexterm><primary>exit_code</primary><secondary>medkit::steady::Response::Content::JobData</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response::Content::JobData</primary><secondary>exit_code</secondary></indexterm>
+<para><computeroutput>uint32_t medkit::steady::Response::Content::JobData::exit_code</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00107">107</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1ade4c0cc9a243c05bf651d46eadb82c4d"/><section>
+    <title>status</title>
+<indexterm><primary>status</primary><secondary>medkit::steady::Response::Content::JobData</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response::Content::JobData</primary><secondary>status</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData_1a5eb333e8cdefe0f2fe6c244cbafcd4a2">medkit::steady::Response::Content::JobData::Status</link> medkit::steady::Response::Content::JobData::status</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+lib/<link linkend="_steady_8hpp">steady.hpp</link></section>
+</section>

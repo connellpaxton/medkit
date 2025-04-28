@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_unionmedkit_1_1steady_1_1Request_1_1Content" xml:lang="en-US">
+<title>medkit::steady::Request::Content Union Reference</title>
+<indexterm><primary>medkit::steady::Request::Content</primary></indexterm>
+<para>
+<computeroutput>#include &lt;steady.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for medkit::steady::Request::Content:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="unionmedkit_1_1steady_1_1Request_1_1Content__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus">GetRequestStatus</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1ReadParam">ReadParam</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reauthenticate">Reauthenticate</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure">Reconfigure</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1RequestSensorHook">RequestSensorHook</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam">SetParam</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>uint64_t <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content_1acbec23a7224281c65acc2845e221ab56">raw</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reauthenticate">medkit::steady::Request::Content::Reauthenticate</link> <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content_1acf4c37b5fd6b54414307209fc246f0eb">reauthenticate</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure">medkit::steady::Request::Content::Reconfigure</link> <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content_1ad8d1560edc7c78554e47c3c91149445b">reconfigure</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam">medkit::steady::Request::Content::SetParam</link> <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content_1a37ee6bac49ad4367a862f20bf4763675">set_param</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1ReadParam">medkit::steady::Request::Content::ReadParam</link> <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content_1a53d16b6186119f9ceb2d9e6fb0b71a72">read_param</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus">medkit::steady::Request::Content::GetRequestStatus</link> <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content_1ad4530798be707abdfde95e7975c81347">get_request_status</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1RequestSensorHook">medkit::steady::Request::Content::RequestSensorHook</link> <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content_1a02740e94435d9cf156377cf919f4146c">requestsensorhook</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00043">43</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_unionmedkit_1_1steady_1_1Request_1_1Content_1ad4530798be707abdfde95e7975c81347"/><section>
+    <title>get_request_status</title>
+<indexterm><primary>get_request_status</primary><secondary>medkit::steady::Request::Content</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content</primary><secondary>get_request_status</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus">medkit::steady::Request::Content::GetRequestStatus</link> medkit::steady::Request::Content::get_request_status</computeroutput></para></section>
+<anchor xml:id="_unionmedkit_1_1steady_1_1Request_1_1Content_1acbec23a7224281c65acc2845e221ab56"/><section>
+    <title>raw</title>
+<indexterm><primary>raw</primary><secondary>medkit::steady::Request::Content</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content</primary><secondary>raw</secondary></indexterm>
+<para><computeroutput>uint64_t medkit::steady::Request::Content::raw</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00044">44</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<anchor xml:id="_unionmedkit_1_1steady_1_1Request_1_1Content_1a53d16b6186119f9ceb2d9e6fb0b71a72"/><section>
+    <title>read_param</title>
+<indexterm><primary>read_param</primary><secondary>medkit::steady::Request::Content</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content</primary><secondary>read_param</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1ReadParam">medkit::steady::Request::Content::ReadParam</link> medkit::steady::Request::Content::read_param</computeroutput></para></section>
+<anchor xml:id="_unionmedkit_1_1steady_1_1Request_1_1Content_1acf4c37b5fd6b54414307209fc246f0eb"/><section>
+    <title>reauthenticate</title>
+<indexterm><primary>reauthenticate</primary><secondary>medkit::steady::Request::Content</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content</primary><secondary>reauthenticate</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reauthenticate">medkit::steady::Request::Content::Reauthenticate</link> medkit::steady::Request::Content::reauthenticate</computeroutput></para></section>
+<anchor xml:id="_unionmedkit_1_1steady_1_1Request_1_1Content_1ad8d1560edc7c78554e47c3c91149445b"/><section>
+    <title>reconfigure</title>
+<indexterm><primary>reconfigure</primary><secondary>medkit::steady::Request::Content</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content</primary><secondary>reconfigure</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure">medkit::steady::Request::Content::Reconfigure</link> medkit::steady::Request::Content::reconfigure</computeroutput></para></section>
+<anchor xml:id="_unionmedkit_1_1steady_1_1Request_1_1Content_1a02740e94435d9cf156377cf919f4146c"/><section>
+    <title>requestsensorhook</title>
+<indexterm><primary>requestsensorhook</primary><secondary>medkit::steady::Request::Content</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content</primary><secondary>requestsensorhook</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1RequestSensorHook">medkit::steady::Request::Content::RequestSensorHook</link> medkit::steady::Request::Content::requestsensorhook</computeroutput></para></section>
+<anchor xml:id="_unionmedkit_1_1steady_1_1Request_1_1Content_1a37ee6bac49ad4367a862f20bf4763675"/><section>
+    <title>set_param</title>
+<indexterm><primary>set_param</primary><secondary>medkit::steady::Request::Content</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content</primary><secondary>set_param</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam">medkit::steady::Request::Content::SetParam</link> medkit::steady::Request::Content::set_param</computeroutput></para></section>
+<para>
+The documentation for this union was generated from the following file:</para>
+lib/<link linkend="_steady_8hpp">steady.hpp</link></section>
+</section>

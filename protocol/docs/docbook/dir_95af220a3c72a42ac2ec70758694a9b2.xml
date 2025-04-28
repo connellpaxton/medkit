@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_95af220a3c72a42ac2ec70758694a9b2" xml:lang="en-US">
+<title>lib/net Directory Reference</title>
+<indexterm><primary>lib/net Directory Reference</primary></indexterm>
+Directory dependency graph for net:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_95af220a3c72a42ac2ec70758694a9b2_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_Network_8hpp">Network.hpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

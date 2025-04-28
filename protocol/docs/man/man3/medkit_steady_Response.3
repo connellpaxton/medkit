@@ -1,0 +1,71 @@
+.TH "medkit::steady::Response" 3 "Version medkit" "MedKit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+medkit::steady::Response
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <steady\&.hpp>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "union \fBContent\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBStatus\fP { \fBOk\fP, \fBNotPermitted\fP = 0x01, \fBNotFound\fP = 0x02, \fBUnavailable\fP = 0x04 }"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "uint8_t \fBmagic\fP [4]"
+.br
+.ti -1c
+.RI "enum \fBmedkit::steady::Response::Status\fP \fBstatus\fP"
+.br
+.ti -1c
+.RI "union \fBmedkit::steady::Response::Content\fP \fBcontent\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB90\fP of file \fBsteady\&.hpp\fP\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBmedkit::steady::Response::Status\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIOk \fP
+.TP
+\f(BINotPermitted \fP
+.TP
+\f(BINotFound \fP
+.TP
+\f(BIUnavailable \fP
+.PP
+Definition at line \fB92\fP of file \fBsteady\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "union \fBmedkit::steady::Response::Content\fP medkit::steady::Response::content"
+
+.SS "uint8_t medkit::steady::Response::magic[4]"
+
+.PP
+Definition at line \fB91\fP of file \fBsteady\&.hpp\fP\&.
+.SS "enum \fBmedkit::steady::Response::Status\fP medkit::steady::Response::status"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MedKit from the source code\&.

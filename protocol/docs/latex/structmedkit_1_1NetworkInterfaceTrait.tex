@@ -1,0 +1,62 @@
+\doxysection{medkit\+::Network\+Interface\+Trait\texorpdfstring{$<$}{<} Handle, Connection\+Info \texorpdfstring{$>$}{>} Struct Template Reference}
+\hypertarget{structmedkit_1_1NetworkInterfaceTrait}{}\label{structmedkit_1_1NetworkInterfaceTrait}\index{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$@{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$}}
+
+
+{\ttfamily \#include $<$Network.\+hpp$>$}
+
+
+
+Collaboration diagram for medkit\+::Network\+Interface\+Trait\texorpdfstring{$<$}{<} Handle, Connection\+Info \texorpdfstring{$>$}{>}\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{structmedkit_1_1NetworkInterfaceTrait__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemedkit_ae84f11154d20f258f62c4edd432cae81}{medkit\+::\+Result}} \mbox{\hyperlink{structmedkit_1_1NetworkInterfaceTrait_ae0356a25c0b4a8428e7ef3fbaea44f62}{connect}} (const Connection\+Info \&conn\+\_\+info)
+\item 
+\mbox{\hyperlink{namespacemedkit_ae84f11154d20f258f62c4edd432cae81}{medkit\+::\+Result}} \mbox{\hyperlink{structmedkit_1_1NetworkInterfaceTrait_ad713f613b7eea365f3a008590895e1cb}{send}} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}data, uint32\+\_\+t len)
+\item 
+\mbox{\hyperlink{namespacemedkit_ae84f11154d20f258f62c4edd432cae81}{medkit\+::\+Result}} \mbox{\hyperlink{structmedkit_1_1NetworkInterfaceTrait_af4eac42d61e2ad37dbdb809233d85300}{read}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}memory, uint32\+\_\+t n, uint32\+\_\+t \texorpdfstring{$\ast$}{*}len)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Handle, typename Connection\+Info$>$\newline
+struct medkit\+::\+Network\+Interface\+Trait$<$ Handle, Connection\+Info $>$}
+
+
+Definition at line \mbox{\hyperlink{Network_8hpp_source_l00009}{9}} of file \mbox{\hyperlink{Network_8hpp_source}{Network.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structmedkit_1_1NetworkInterfaceTrait_ae0356a25c0b4a8428e7ef3fbaea44f62}\index{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$@{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$}!connect@{connect}}
+\index{connect@{connect}!medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$@{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{structmedkit_1_1NetworkInterfaceTrait_ae0356a25c0b4a8428e7ef3fbaea44f62} 
+template$<$typename Handle, typename Connection\+Info$>$ \\
+\mbox{\hyperlink{namespacemedkit_ae84f11154d20f258f62c4edd432cae81}{medkit\+::\+Result}} \mbox{\hyperlink{structmedkit_1_1NetworkInterfaceTrait}{medkit\+::\+Network\+Interface\+Trait}}$<$ Handle, Connection\+Info $>$\+::connect (\begin{DoxyParamCaption}\item[{const Connection\+Info \&}]{conn\+\_\+info}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structmedkit_1_1NetworkInterfaceTrait_af4eac42d61e2ad37dbdb809233d85300}\index{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$@{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$}!read@{read}}
+\index{read@{read}!medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$@{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{structmedkit_1_1NetworkInterfaceTrait_af4eac42d61e2ad37dbdb809233d85300} 
+template$<$typename Handle, typename Connection\+Info$>$ \\
+\mbox{\hyperlink{namespacemedkit_ae84f11154d20f258f62c4edd432cae81}{medkit\+::\+Result}} \mbox{\hyperlink{structmedkit_1_1NetworkInterfaceTrait}{medkit\+::\+Network\+Interface\+Trait}}$<$ Handle, Connection\+Info $>$\+::read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{memory}{, }\item[{uint32\+\_\+t}]{n}{, }\item[{uint32\+\_\+t \texorpdfstring{$\ast$}{*}}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structmedkit_1_1NetworkInterfaceTrait_ad713f613b7eea365f3a008590895e1cb}\index{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$@{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$}!send@{send}}
+\index{send@{send}!medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$@{medkit::NetworkInterfaceTrait$<$ Handle, ConnectionInfo $>$}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{structmedkit_1_1NetworkInterfaceTrait_ad713f613b7eea365f3a008590895e1cb} 
+template$<$typename Handle, typename Connection\+Info$>$ \\
+\mbox{\hyperlink{namespacemedkit_ae84f11154d20f258f62c4edd432cae81}{medkit\+::\+Result}} \mbox{\hyperlink{structmedkit_1_1NetworkInterfaceTrait}{medkit\+::\+Network\+Interface\+Trait}}$<$ Handle, Connection\+Info $>$\+::send (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{data}{, }\item[{uint32\+\_\+t}]{len}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/net/\mbox{\hyperlink{Network_8hpp}{Network.\+hpp}}\end{DoxyCompactItemize}

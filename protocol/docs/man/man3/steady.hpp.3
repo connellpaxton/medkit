@@ -1,0 +1,71 @@
+.TH "lib/steady.hpp" 3 "Version medkit" "MedKit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/steady.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <cstdint>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBmedkit::steady::Request\fP"
+.br
+.ti -1c
+.RI "union \fBmedkit::steady::Request::Content\fP"
+.br
+.ti -1c
+.RI "struct \fBmedkit::steady::Request::Content::Reauthenticate\fP"
+.br
+.ti -1c
+.RI "struct \fBmedkit::steady::Request::Content::Reconfigure\fP"
+.br
+.ti -1c
+.RI "struct \fBmedkit::steady::Request::Content::SetParam\fP"
+.br
+.ti -1c
+.RI "struct \fBmedkit::steady::Request::Content::ReadParam\fP"
+.br
+.ti -1c
+.RI "struct \fBmedkit::steady::Request::Content::GetRequestStatus\fP"
+.br
+.ti -1c
+.RI "struct \fBmedkit::steady::Request::Content::RequestSensorHook\fP"
+.br
+.ti -1c
+.RI "struct \fBmedkit::steady::Response\fP"
+.br
+.ti -1c
+.RI "union \fBmedkit::steady::Response::Content\fP"
+.br
+.ti -1c
+.RI "struct \fBmedkit::steady::Response::Content::JobData\fP"
+.br
+.ti -1c
+.RI "struct \fBmedkit::steady::Response::Content::Param\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBmedkit\fP"
+.br
+.ti -1c
+.RI "namespace \fBmedkit::steady\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "constexpr uint32_t \fBmedkit::MAX_DEVICES\fP = (1 << 26)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MedKit from the source code\&.

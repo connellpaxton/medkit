@@ -4,6 +4,8 @@ The Protocol is designed to operate in OSI Model Level 5 and 6 [osi model specif
 In a hypothetical larger, commerical stage of the project, a definitive protocol would have to be solidified.
 The device implemented in (II) will be done over Wi-Fi, for example, but a more realistic situation would likely
 use bluetooth due to the limited range of connections, wifi connection not needing to be configured manually, etc.
+In fact, the protocol may be with a mix of wired and wireless devices, and for various security reasons, this might
+be optimal for some sensitive, high-reliability applications.
 
 Each connection is split into 3 states:
 - *Phase I: Authentication*: The device connects to a nearby device and exchanges initial information used for 

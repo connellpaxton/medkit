@@ -1,0 +1,8 @@
+compilation_database_dir: '.'
+output_directory: diagrams
+diagrams:
+  socket_example:
+    type: class
+    title: MedKit protocol
+    glob:
+      - ./src/example.cpp

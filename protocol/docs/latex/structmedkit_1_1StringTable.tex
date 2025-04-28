@@ -1,0 +1,98 @@
+\doxysection{medkit\+::String\+Table\texorpdfstring{$<$}{<} size\+\_\+type \texorpdfstring{$>$}{>} Struct Template Reference}
+\hypertarget{structmedkit_1_1StringTable}{}\label{structmedkit_1_1StringTable}\index{medkit::StringTable$<$ size\_type $>$@{medkit::StringTable$<$ size\_type $>$}}
+
+
+limited to 2\texorpdfstring{$^\wedge$}{\string^}(sizeof(size\+\_\+type) characters allows lookups to be faster because length is a heuristic  
+
+
+
+
+{\ttfamily \#include $<$config.\+hpp$>$}
+
+
+
+Collaboration diagram for medkit\+::String\+Table\texorpdfstring{$<$}{<} size\+\_\+type \texorpdfstring{$>$}{>}\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{structmedkit_1_1StringTable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmedkit_1_1StringTable_acc3e473fb41c22ef5f3b4763af8ad67b}{data}} (size\+\_\+t \&total\+\_\+size)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{structmedkit_1_1StringTable_a7da27d6bd3ca1fbbb59afdb21fb98956}{n\+\_\+entries}}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmedkit_1_1StringTable_ac46dcb376528029e34235e56ae2a366d}{lengths}}
+\item 
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmedkit_1_1StringTable_a52f0a0d815e8f4f7375df6ab046c0474}{strs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename size\+\_\+type$>$\newline
+struct medkit\+::\+String\+Table$<$ size\+\_\+type $>$}
+limited to 2\texorpdfstring{$^\wedge$}{\string^}(sizeof(size\+\_\+type) characters allows lookups to be faster because length is a heuristic 
+
+Definition at line \mbox{\hyperlink{config_8hpp_source_l00012}{12}} of file \mbox{\hyperlink{config_8hpp_source}{config.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structmedkit_1_1StringTable_acc3e473fb41c22ef5f3b4763af8ad67b}\index{medkit::StringTable$<$ size\_type $>$@{medkit::StringTable$<$ size\_type $>$}!data@{data}}
+\index{data@{data}!medkit::StringTable$<$ size\_type $>$@{medkit::StringTable$<$ size\_type $>$}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \label{structmedkit_1_1StringTable_acc3e473fb41c22ef5f3b4763af8ad67b} 
+template$<$typename size\+\_\+type$>$ \\
+uint8\+\_\+t \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmedkit_1_1StringTable}{medkit\+::\+String\+Table}}$<$ size\+\_\+type $>$\+::data (\begin{DoxyParamCaption}\item[{size\+\_\+t \&}]{total\+\_\+size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@breif 0 sizeof(size\+\_\+type) \texorpdfstring{$\ast$}{*} 2 + n\+\_\+entries + sum(lengths) \mbox{[}total\+\_\+length\mbox{]}\mbox{[}n\+\_\+entries\mbox{]}\mbox{[}lengths.....\mbox{]}\mbox{[}entries.....\mbox{]} 
+
+Definition at line \mbox{\hyperlink{config_8hpp_source_l00021}{21}} of file \mbox{\hyperlink{config_8hpp_source}{config.\+hpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structmedkit_1_1StringTable_ac46dcb376528029e34235e56ae2a366d}\index{medkit::StringTable$<$ size\_type $>$@{medkit::StringTable$<$ size\_type $>$}!lengths@{lengths}}
+\index{lengths@{lengths}!medkit::StringTable$<$ size\_type $>$@{medkit::StringTable$<$ size\_type $>$}}
+\doxysubsubsection{\texorpdfstring{lengths}{lengths}}
+{\footnotesize\ttfamily \label{structmedkit_1_1StringTable_ac46dcb376528029e34235e56ae2a366d} 
+template$<$typename size\+\_\+type$>$ \\
+uint8\+\_\+t\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmedkit_1_1StringTable}{medkit\+::\+String\+Table}}$<$ size\+\_\+type $>$\+::lengths}
+
+
+
+Definition at line \mbox{\hyperlink{config_8hpp_source_l00014}{14}} of file \mbox{\hyperlink{config_8hpp_source}{config.\+hpp}}.
+
+\Hypertarget{structmedkit_1_1StringTable_a7da27d6bd3ca1fbbb59afdb21fb98956}\index{medkit::StringTable$<$ size\_type $>$@{medkit::StringTable$<$ size\_type $>$}!n\_entries@{n\_entries}}
+\index{n\_entries@{n\_entries}!medkit::StringTable$<$ size\_type $>$@{medkit::StringTable$<$ size\_type $>$}}
+\doxysubsubsection{\texorpdfstring{n\_entries}{n\_entries}}
+{\footnotesize\ttfamily \label{structmedkit_1_1StringTable_a7da27d6bd3ca1fbbb59afdb21fb98956} 
+template$<$typename size\+\_\+type$>$ \\
+size\+\_\+t \mbox{\hyperlink{structmedkit_1_1StringTable}{medkit\+::\+String\+Table}}$<$ size\+\_\+type $>$\+::n\+\_\+entries}
+
+
+
+Definition at line \mbox{\hyperlink{config_8hpp_source_l00013}{13}} of file \mbox{\hyperlink{config_8hpp_source}{config.\+hpp}}.
+
+\Hypertarget{structmedkit_1_1StringTable_a52f0a0d815e8f4f7375df6ab046c0474}\index{medkit::StringTable$<$ size\_type $>$@{medkit::StringTable$<$ size\_type $>$}!strs@{strs}}
+\index{strs@{strs}!medkit::StringTable$<$ size\_type $>$@{medkit::StringTable$<$ size\_type $>$}}
+\doxysubsubsection{\texorpdfstring{strs}{strs}}
+{\footnotesize\ttfamily \label{structmedkit_1_1StringTable_a52f0a0d815e8f4f7375df6ab046c0474} 
+template$<$typename size\+\_\+type$>$ \\
+uint8\+\_\+t\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structmedkit_1_1StringTable}{medkit\+::\+String\+Table}}$<$ size\+\_\+type $>$\+::strs}
+
+
+
+Definition at line \mbox{\hyperlink{config_8hpp_source_l00015}{15}} of file \mbox{\hyperlink{config_8hpp_source}{config.\+hpp}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{config_8hpp}{config.\+hpp}}\end{DoxyCompactItemize}

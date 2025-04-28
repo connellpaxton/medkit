@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_config_8hpp" xml:lang="en-US">
+<title>lib/config.hpp File Reference</title>
+<indexterm><primary>lib/config.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdint.h&gt;<?linebreak?>#include &lt;stddef.h&gt;<?linebreak?>#include &quot;common.hpp&quot;<?linebreak?></programlisting>Include dependency graph for config.hpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="config_8hpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmedkit_1_1StringTable">medkit::StringTable&lt; size_type &gt;</link></para>
+
+<para>limited to 2^(sizeof(size_type) characters allows lookups to be faster because length is a heuristic </para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1ConfigurationProfileRequest">medkit::ConfigurationProfileRequest&lt; size_type &gt;</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacemedkit">medkit</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

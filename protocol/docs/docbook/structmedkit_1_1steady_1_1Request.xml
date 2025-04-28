@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmedkit_1_1steady_1_1Request" xml:lang="en-US">
+<title>medkit::steady::Request Struct Reference</title>
+<indexterm><primary>medkit::steady::Request</primary></indexterm>
+<para>
+<computeroutput>#include &lt;steady.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for medkit::steady::Request:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structmedkit_1_1steady_1_1Request__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>union <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content">Content</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4f">MessageType</link> { <?linebreak?><link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4faed7cbd253dd3059eb68aa4a6e55df8df">Reauthenticate</link>
+, <link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fada4558e1b9ab5276f7ed8baeced13a5d">Reconfigure</link>
+, <link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fa62382f051b033a7760fe2b44568fef0e">SetParam</link>
+, <link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fad46043b51d33ed072779986b83adc0e1">ReadParam</link>
+, <?linebreak?><link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fa507917105f7ede07b288b400ad0494b4">GetCommandStatus</link>
+, <link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fa088968d023674599c405f268f1ec2f07">Notify</link>
+, <link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fa24a69788c4856dd0437200ffdacfca97">RequestSensorHook</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const int8_t <link linkend="_structmedkit_1_1steady_1_1Request_1aea16a098139ab4d1cb48eaedf1589f50">magic</link> [4] = {&apos;\xEF&apos;, &apos;R&apos;, &apos;E&apos;, &apos;Q&apos;}</para>
+</listitem>
+            <listitem><para>enum <link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4f">medkit::steady::Request::MessageType</link> <link linkend="_structmedkit_1_1steady_1_1Request_1a6f4700ecbc619612e8a5b1d553a61e50">type</link></para>
+</listitem>
+            <listitem><para>union <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content">medkit::steady::Request::Content</link> <link linkend="_structmedkit_1_1steady_1_1Request_1ae1fa8f28d3115b0598bd66104e538693">content</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00021">21</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4f"/><section>
+    <title>MessageType</title>
+<indexterm><primary>MessageType</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>MessageType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4f">medkit::steady::Request::MessageType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Reauthenticate</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>Reauthenticate</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4faed7cbd253dd3059eb68aa4a6e55df8df"/>Reauthenticate</entry><entry></entry></row><row><entry><indexterm><primary>Reconfigure</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>Reconfigure</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fada4558e1b9ab5276f7ed8baeced13a5d"/>Reconfigure</entry><entry></entry></row><row><entry><indexterm><primary>SetParam</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>SetParam</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fa62382f051b033a7760fe2b44568fef0e"/>SetParam</entry><entry></entry></row><row><entry><indexterm><primary>ReadParam</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>ReadParam</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fad46043b51d33ed072779986b83adc0e1"/>ReadParam</entry><entry></entry></row><row><entry><indexterm><primary>GetCommandStatus</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>GetCommandStatus</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fa507917105f7ede07b288b400ad0494b4"/>GetCommandStatus</entry><entry></entry></row><row><entry><indexterm><primary>Notify</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>Notify</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fa088968d023674599c405f268f1ec2f07"/>Notify</entry><entry></entry></row><row><entry><indexterm><primary>RequestSensorHook</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>RequestSensorHook</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4fa24a69788c4856dd0437200ffdacfca97"/>RequestSensorHook</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00032">32</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1ae1fa8f28d3115b0598bd66104e538693"/><section>
+    <title>content</title>
+<indexterm><primary>content</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>content</secondary></indexterm>
+<para><computeroutput>union <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content">medkit::steady::Request::Content</link> medkit::steady::Request::content</computeroutput></para></section>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1aea16a098139ab4d1cb48eaedf1589f50"/><section>
+    <title>magic</title>
+<indexterm><primary>magic</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>magic</secondary></indexterm>
+<para><computeroutput>const int8_t medkit::steady::Request::magic[4] = {&apos;\xEF&apos;, &apos;R&apos;, &apos;E&apos;, &apos;Q&apos;}</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00022">22</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1a6f4700ecbc619612e8a5b1d553a61e50"/><section>
+    <title>type</title>
+<indexterm><primary>type</primary><secondary>medkit::steady::Request</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request</primary><secondary>type</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_structmedkit_1_1steady_1_1Request_1ac2e44d78b6c325d1217f4ba688086e4f">medkit::steady::Request::MessageType</link> medkit::steady::Request::type</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+lib/<link linkend="_steady_8hpp">steady.hpp</link></section>
+</section>

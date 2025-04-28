@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>MedKit</title>
+    </info>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="namespacemedkit.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacemedkit_1_1auth.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacemedkit_1_1steady.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="structmedkit_1_1ConfigurationProfileRequest.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="unionmedkit_1_1steady_1_1Request_1_1Content.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="unionmedkit_1_1steady_1_1Response_1_1Content.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1NetworkInterfaceTrait.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1steady_1_1Response_1_1Content_1_1Param.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1steady_1_1Request_1_1Content_1_1ReadParam.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1steady_1_1Request_1_1Content_1_1Reauthenticate.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1steady_1_1Request.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1steady_1_1Request_1_1Content_1_1RequestSensorHook.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1steady_1_1Response.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structSocketConnectionInfo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmedkit_1_1StringTable.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="auth_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="auth_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="common_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="common_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="config_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="config_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="MedKit_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="MedKit_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="Network_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="Network_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="example_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="example_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="steady_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="steady_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

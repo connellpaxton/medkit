@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_example_8cpp" xml:lang="en-US">
+<title>lib/src/example.cpp File Reference</title>
+<indexterm><primary>lib/src/example.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;medkit/net/Network.hpp&gt;<?linebreak?>#include &lt;medkit/steady.hpp&gt;<?linebreak?>#include &lt;sys/socket.h&gt;<?linebreak?></programlisting>Include dependency graph for example.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="example_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4">medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>typedef int <link linkend="_example_8cpp_1ae6665db702f7f374879e1ccb5042c031">SocketHandle</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_example_8cpp_1ae84f11154d20f258f62c4edd432cae81">Result</link> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="_example_8cpp_1ae6665db702f7f374879e1ccb5042c031"/><section>
+    <title>SocketHandle</title>
+<indexterm><primary>SocketHandle</primary><secondary>example.cpp</secondary></indexterm>
+<indexterm><primary>example.cpp</primary><secondary>SocketHandle</secondary></indexterm>
+<para><computeroutput>typedef int <link linkend="_example_8cpp_1ae6665db702f7f374879e1ccb5042c031">SocketHandle</link></computeroutput></para><para>
+Definition at line <link linkend="_example_8cpp_source_1l00011">11</link> of file <link linkend="_example_8cpp_source">example.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_example_8cpp_1ae84f11154d20f258f62c4edd432cae81"/><section>
+    <title>Result</title>
+<indexterm><primary>Result</primary><secondary>example.cpp</secondary></indexterm>
+<indexterm><primary>example.cpp</primary><secondary>Result</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">medkit::Result</link></computeroutput></para><para>
+Definition at line <link linkend="_MedKit_8hpp_source_1l00004">4</link> of file <link linkend="_MedKit_8hpp_source">MedKit.hpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_example_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>example.cpp</secondary></indexterm>
+<indexterm><primary>example.cpp</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main ( )</computeroutput></para><para>
+Definition at line <link linkend="_example_8cpp_source_1l00034">34</link> of file <link linkend="_example_8cpp_source">example.cpp</link>.</para>
+</section>
+</section>
+</section>

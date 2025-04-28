@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_auth_8hpp_source" xml:lang="en-US">
+<title>auth.hpp</title>
+<indexterm><primary>lib/auth.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_auth_8hpp_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00002"/>00002 
+<anchor xml:id="_auth_8hpp_source_1l00003"/><link linkend="_namespacemedkit">00003</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacemedkit">medkit</link>&#32;{
+<anchor xml:id="_auth_8hpp_source_1l00004"/>00004 <emphasis role="comment"></emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00005"/>00005 <emphasis role="comment">/**</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00006"/>00006 <emphasis role="comment">&#32;*&#32;@brief&#32;&#32;</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00007"/>00007 <emphasis role="comment">&#32;*&#32;The&#32;Network&#32;Packets&#32;sent&#32;during&#32;the&#32;authentication</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00008"/>00008 <emphasis role="comment">&#32;*&#32;&#32;&#32;&#32;phase&#32;of&#32;the&#32;program</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00009"/>00009 <emphasis role="comment">&#32;*</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00010"/>00010 <emphasis role="comment">&#32;*&#32;&#32;Messages&#32;across&#32;this&#32;portion&#32;of&#32;the&#32;communication</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00011"/>00011 <emphasis role="comment">&#32;*&#32;&#32;is&#32;done&#32;through&#32;an&#32;asynchronous&#32;request-response</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00012"/>00012 <emphasis role="comment">&#32;*&#32;&#32;dichotomy.&#32;Control&#32;device&#32;wrters&#32;should&#32;take&#32;care</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00013"/>00013 <emphasis role="comment">&#32;*&#32;&#32;to&#32;realize&#32;that&#32;due&#32;to&#32;safety&#32;concerns,&#32;a&#32;device</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00014"/>00014 <emphasis role="comment">&#32;*&#32;&#32;may&#32;respect&#32;the&#32;guidance&#32;of&#32;a&#32;command&#32;but&#32;bound&#32;its</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00015"/>00015 <emphasis role="comment">&#32;*&#32;&#32;realized&#32;change.&#32;Querying&#32;status&#32;of&#32;inputs&#32;is&#32;important</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00016"/>00016 <emphasis role="comment">&#32;*&#32;&#32;to&#32;the&#32;proper&#32;function&#32;of&#32;nodes.</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00017"/>00017 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="_auth_8hpp_source_1l00018"/><link linkend="_namespacemedkit_1_1auth">00018</link> <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacemedkit_1_1auth">auth</link>&#32;{
+<anchor xml:id="_auth_8hpp_source_1l00019"/>00019 }
+<anchor xml:id="_auth_8hpp_source_1l00020"/>00020 
+<anchor xml:id="_auth_8hpp_source_1l00021"/>00021 }
+</programlisting></section>

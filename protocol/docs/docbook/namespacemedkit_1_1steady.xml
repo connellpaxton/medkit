@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacemedkit_1_1steady" xml:lang="en-US">
+<title>medkit::steady Namespace Reference</title>
+<indexterm><primary>medkit::steady</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request">Request</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Response">Response</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

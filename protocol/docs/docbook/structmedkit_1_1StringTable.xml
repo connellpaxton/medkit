@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmedkit_1_1StringTable" xml:lang="en-US">
+<title>medkit::StringTable&lt; size_type &gt; Struct Template Reference</title>
+<indexterm><primary>medkit::StringTable&lt; size_type &gt;</primary></indexterm>
+<para>
+
+<para>limited to 2^(sizeof(size_type) characters allows lookups to be faster because length is a heuristic </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;config.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for medkit::StringTable&lt; size_type &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structmedkit_1_1StringTable__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>uint8_t * <link linkend="_structmedkit_1_1StringTable_1acc3e473fb41c22ef5f3b4763af8ad67b">data</link> (size_t &amp;total_size)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>size_t <link linkend="_structmedkit_1_1StringTable_1a7da27d6bd3ca1fbbb59afdb21fb98956">n_entries</link></para>
+</listitem>
+            <listitem><para>uint8_t * <link linkend="_structmedkit_1_1StringTable_1ac46dcb376528029e34235e56ae2a366d">lengths</link></para>
+</listitem>
+            <listitem><para>uint8_t * <link linkend="_structmedkit_1_1StringTable_1a52f0a0d815e8f4f7375df6ab046c0474">strs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>template&lt;typename size_type&gt;<?linebreak?>struct medkit::StringTable&lt; size_type &gt;</title></simplesect>
+
+<para>limited to 2^(sizeof(size_type) characters allows lookups to be faster because length is a heuristic </para>
+<para>
+Definition at line <link linkend="_config_8hpp_source_1l00012">12</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_structmedkit_1_1StringTable_1acc3e473fb41c22ef5f3b4763af8ad67b"/><section>
+    <title>data()</title>
+<indexterm><primary>data</primary><secondary>medkit::StringTable&lt; size_type &gt;</secondary></indexterm>
+<indexterm><primary>medkit::StringTable&lt; size_type &gt;</primary><secondary>data</secondary></indexterm>
+<computeroutput>template&lt;typename size_type&gt; </computeroutput><para><computeroutput>uint8_t * <link linkend="_structmedkit_1_1StringTable">medkit::StringTable</link>&lt; size_type &gt;::data (size_t &amp; total_size)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>@breif 0 sizeof(size_type) * 2 + n_entries + sum(lengths) [total_length][n_entries][lengths.....][entries.....] </para>
+<para>
+Definition at line <link linkend="_config_8hpp_source_1l00021">21</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structmedkit_1_1StringTable_1ac46dcb376528029e34235e56ae2a366d"/><section>
+    <title>lengths</title>
+<indexterm><primary>lengths</primary><secondary>medkit::StringTable&lt; size_type &gt;</secondary></indexterm>
+<indexterm><primary>medkit::StringTable&lt; size_type &gt;</primary><secondary>lengths</secondary></indexterm>
+<computeroutput>template&lt;typename size_type&gt; </computeroutput><para><computeroutput>uint8_t* <link linkend="_structmedkit_1_1StringTable">medkit::StringTable</link>&lt; size_type &gt;::lengths</computeroutput></para><para>
+Definition at line <link linkend="_config_8hpp_source_1l00014">14</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1StringTable_1a7da27d6bd3ca1fbbb59afdb21fb98956"/><section>
+    <title>n_entries</title>
+<indexterm><primary>n_entries</primary><secondary>medkit::StringTable&lt; size_type &gt;</secondary></indexterm>
+<indexterm><primary>medkit::StringTable&lt; size_type &gt;</primary><secondary>n_entries</secondary></indexterm>
+<computeroutput>template&lt;typename size_type&gt; </computeroutput><para><computeroutput>size_t <link linkend="_structmedkit_1_1StringTable">medkit::StringTable</link>&lt; size_type &gt;::n_entries</computeroutput></para><para>
+Definition at line <link linkend="_config_8hpp_source_1l00013">13</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1StringTable_1a52f0a0d815e8f4f7375df6ab046c0474"/><section>
+    <title>strs</title>
+<indexterm><primary>strs</primary><secondary>medkit::StringTable&lt; size_type &gt;</secondary></indexterm>
+<indexterm><primary>medkit::StringTable&lt; size_type &gt;</primary><secondary>strs</secondary></indexterm>
+<computeroutput>template&lt;typename size_type&gt; </computeroutput><para><computeroutput>uint8_t* <link linkend="_structmedkit_1_1StringTable">medkit::StringTable</link>&lt; size_type &gt;::strs</computeroutput></para><para>
+Definition at line <link linkend="_config_8hpp_source_1l00015">15</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+lib/<link linkend="_config_8hpp">config.hpp</link></section>
+</section>

@@ -1,0 +1,77 @@
+.TH "medkit::steady::Request" 3 "Version medkit" "MedKit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+medkit::steady::Request
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <steady\&.hpp>\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "union \fBContent\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBMessageType\fP { \fBReauthenticate\fP, \fBReconfigure\fP, \fBSetParam\fP, \fBReadParam\fP, \fBGetCommandStatus\fP, \fBNotify\fP, \fBRequestSensorHook\fP }"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "const int8_t \fBmagic\fP [4] = {'\\xEF', 'R', 'E', 'Q'}"
+.br
+.ti -1c
+.RI "enum \fBmedkit::steady::Request::MessageType\fP \fBtype\fP"
+.br
+.ti -1c
+.RI "union \fBmedkit::steady::Request::Content\fP \fBcontent\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB21\fP of file \fBsteady\&.hpp\fP\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBmedkit::steady::Request::MessageType\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BIReauthenticate \fP
+.TP
+\f(BIReconfigure \fP
+.TP
+\f(BISetParam \fP
+.TP
+\f(BIReadParam \fP
+.TP
+\f(BIGetCommandStatus \fP
+.TP
+\f(BINotify \fP
+.TP
+\f(BIRequestSensorHook \fP
+.PP
+Definition at line \fB32\fP of file \fBsteady\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "union \fBmedkit::steady::Request::Content\fP medkit::steady::Request::content"
+
+.SS "const int8_t medkit::steady::Request::magic[4] = {'\\xEF', 'R', 'E', 'Q'}"
+
+.PP
+Definition at line \fB22\fP of file \fBsteady\&.hpp\fP\&.
+.SS "enum \fBmedkit::steady::Request::MessageType\fP medkit::steady::Request::type"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MedKit from the source code\&.

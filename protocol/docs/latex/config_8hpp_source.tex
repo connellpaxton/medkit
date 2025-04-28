@@ -1,0 +1,73 @@
+\doxysection{config.\+hpp}
+\hypertarget{config_8hpp_source}{}\label{config_8hpp_source}\index{lib/config.hpp@{lib/config.hpp}}
+\mbox{\hyperlink{config_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <stddef.h>}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{common_8hpp}{common.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00006}00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacemedkit}{medkit}}\ \{}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00007}00007\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00008}00008\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00009}00009\ \textcolor{comment}{\ *\ @brief\ limited\ to\ 2\string^(sizeof(size\_type)\ characters}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00010}00010\ \textcolor{comment}{\ *\ allows\ lookups\ to\ be\ faster\ because\ length\ is\ a\ heuristic\ */}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00011}00011\ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ \textcolor{keywordtype}{size\_t}ype>}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00012}\mbox{\hyperlink{structmedkit_1_1StringTable}{00012}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmedkit_1_1StringTable}{StringTable}}\ \{}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00013}\mbox{\hyperlink{structmedkit_1_1StringTable_a7da27d6bd3ca1fbbb59afdb21fb98956}{00013}}\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{structmedkit_1_1StringTable_a7da27d6bd3ca1fbbb59afdb21fb98956}{n\_entries}};}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00014}\mbox{\hyperlink{structmedkit_1_1StringTable_ac46dcb376528029e34235e56ae2a366d}{00014}}\ \ \ \ \ uint8\_t*\ \mbox{\hyperlink{structmedkit_1_1StringTable_ac46dcb376528029e34235e56ae2a366d}{lengths}};}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00015}\mbox{\hyperlink{structmedkit_1_1StringTable_a52f0a0d815e8f4f7375df6ab046c0474}{00015}}\ \ \ \ \ uint8\_t*\ \mbox{\hyperlink{structmedkit_1_1StringTable_a52f0a0d815e8f4f7375df6ab046c0474}{strs}};}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00016}00016\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00017}00017\ \textcolor{comment}{\ \ \ \ /**\ @breif}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00018}00018\ \textcolor{comment}{\ \ \ \ \ *\ 0\ \ \ sizeof(size\_type)\ \ *\ 2\ \ +\ \ \ \ n\_entries\ +\ \ \ \ sum(lengths)}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00019}00019\ \textcolor{comment}{\ \ \ \ \ *\ [total\_length][n\_entries][lengths.....][entries.....]}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00020}00020\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00021}\mbox{\hyperlink{structmedkit_1_1StringTable_acc3e473fb41c22ef5f3b4763af8ad67b}{00021}}\ \ \ \ \ uint8\_t*\ \mbox{\hyperlink{structmedkit_1_1StringTable_acc3e473fb41c22ef5f3b4763af8ad67b}{data}}(\textcolor{keywordtype}{size\_t}\&\ total\_size)\ \{}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00022}00022\ \ \ \ \ \ \ \ \ total\_size\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{structmedkit_1_1StringTable_a7da27d6bd3ca1fbbb59afdb21fb98956}{n\_entries}};\ i++)\ \{}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ total\_size\ +=\ \mbox{\hyperlink{structmedkit_1_1StringTable_ac46dcb376528029e34235e56ae2a366d}{lengths}}[i];}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ account\ for\ the\ total\_length\ of\ section\ (so\ it\ can\ be\ skipped),}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00028}00028\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ size\ of\ the\ lengths\ and\ content\ arrays,\ as\ well\ as\ a\ total\_size\ for\ the\ number\ of\ entries\ */}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00029}00029\ \ \ \ \ \ \ \ \ total\_size\ *=\ 2;}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00030}00030\ \ \ \ \ \ \ \ \ total\_size\ +=\ 2\ *\ \textcolor{keyword}{sizeof}(size\_type);}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00031}00031\ \ \ \ \ \ \ \ \ uint8\_t*\ ret\ =\ \textcolor{keyword}{new}\ uint8\_t[total\_size];}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}*\ types\ =\ \textcolor{keyword}{reinterpret\_cast<}size\_type*\textcolor{keyword}{>}(ret);}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00034}00034\ \ \ \ \ \ \ \ \ types[0]\ =\ \mbox{\hyperlink{structmedkit_1_1StringTable_ac46dcb376528029e34235e56ae2a366d}{lengths}};}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ret;}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00038}00038\ \};}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00041}00041\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ \textcolor{keywordtype}{size\_t}ype>}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00042}\mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest}{00042}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest}{ConfigurationProfileRequest}}\ \{}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00043}00043\ \ \ \ \ \textcolor{comment}{/*\ format\ is\ hard\ to\ easily\ encode\ in\ a\ C++\ compile-\/time}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ *\ way\ as\ it\ relies\ upon\ FAMs\ (easily\ indexable)\ */}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00045}\mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a8a0aa2d805e84bd772a79bd05cfc8d52}{00045}}\ \ \ \ \ \mbox{\hyperlink{namespacemedkit_aa7af9648005314e8fe667f7ea372c0b0}{Role}}\ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a8a0aa2d805e84bd772a79bd05cfc8d52}{role}}\ :\ 8;}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00046}\mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a26f6ba85e611fe4207ad4adbb4c21e72}{00046}}\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a26f6ba85e611fe4207ad4adbb4c21e72}{string\_table}}\ =\ \mbox{\hyperlink{structmedkit_1_1StringTable}{StringTable<size\_type>}};}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00047}\mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_ab30748830abe53e46da49f34281cae4b}{00047}}\ \ \ \ \ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a26f6ba85e611fe4207ad4adbb4c21e72}{string\_table}}\ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_ab30748830abe53e46da49f34281cae4b}{available\_feature\_list}};}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00048}\mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a42942a72c21314806b69f54275ae9fba}{00048}}\ \ \ \ \ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a26f6ba85e611fe4207ad4adbb4c21e72}{string\_table}}\ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a42942a72c21314806b69f54275ae9fba}{required\_feature\_list}};}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00049}\mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a8171d491f6d11911e88f27de0431bb6c}{00049}}\ \ \ \ \ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a26f6ba85e611fe4207ad4adbb4c21e72}{string\_table}}\ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a8171d491f6d11911e88f27de0431bb6c}{parameter\_list}};}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00051}00051\ \ \ \ \ \textcolor{comment}{/*\ flattens\ the\ data\ */}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00052}\mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_adf84cf0a744546bd7ba26e44dc329406}{00052}}\ \ \ \ \ uint8\_t*\ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_adf84cf0a744546bd7ba26e44dc329406}{data}}(\textcolor{keywordtype}{size\_t}\&\ total\_size)\ \{}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00053}00053\ \ \ \ \ \ \ \ \ size\_type\ avail\_size;}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_ab30748830abe53e46da49f34281cae4b}{available\_feature\_list}}.data(\&avail\_size);}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00056}00056\ \ \ \ \ \ \ \ \ size\_type\ req\_size;}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a42942a72c21314806b69f54275ae9fba}{required\_feature\_list}}.data(\&req\_size);}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00059}00059\ \ \ \ \ \ \ \ \ size\_type\ param\_size;}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structmedkit_1_1ConfigurationProfileRequest_a8171d491f6d11911e88f27de0431bb6c}{parameter\_list}}.data(\&param\_size);}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00061}00061\ \ \ \ \ \ \ \ \ total\_size\ =\ avail\_size,\ param\_size;}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00062}00062\ \ \ \ \ \ \ \ \ uint8\_t*\ ret\ =\ \textcolor{keyword}{new}\ uint8\_t[total\_size];}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ret;}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00064}00064\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00065}00065\ \};}
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{config_8hpp_source_l00067}00067\ \}}
+
+\end{DoxyCode}

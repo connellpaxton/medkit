@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_MedKit_8hpp" xml:lang="en-US">
+<title>lib/MedKit.hpp File Reference</title>
+<indexterm><primary>lib/MedKit.hpp</primary></indexterm>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="MedKit_8hpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacemedkit">medkit</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">medkit::Result</link> { <link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81acb44411c897094df208bb9112124067d">medkit::Success</link>
+, <link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81ac55507233ca08a3dedf52e2246b34fa3">medkit::NetworkLost</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

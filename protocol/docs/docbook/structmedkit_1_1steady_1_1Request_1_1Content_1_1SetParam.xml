@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam" xml:lang="en-US">
+<title>medkit::steady::Request::Content::SetParam Struct Reference</title>
+<indexterm><primary>medkit::steady::Request::Content::SetParam</primary></indexterm>
+<para>
+<computeroutput>#include &lt;steady.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for medkit::steady::Request::Content::SetParam:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam_1a9d7394bcc02cc7fe182496ac9d754595">param_handle</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam_1a5594d12b479ba1bb6f2b234e50436b4a">param_value</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00060">60</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam_1a9d7394bcc02cc7fe182496ac9d754595"/><section>
+    <title>param_handle</title>
+<indexterm><primary>param_handle</primary><secondary>medkit::steady::Request::Content::SetParam</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content::SetParam</primary><secondary>param_handle</secondary></indexterm>
+<para><computeroutput>uint32_t medkit::steady::Request::Content::SetParam::param_handle</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00062">62</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam_1a5594d12b479ba1bb6f2b234e50436b4a"/><section>
+    <title>param_value</title>
+<indexterm><primary>param_value</primary><secondary>medkit::steady::Request::Content::SetParam</secondary></indexterm>
+<indexterm><primary>medkit::steady::Request::Content::SetParam</primary><secondary>param_value</secondary></indexterm>
+<para><computeroutput>uint32_t medkit::steady::Request::Content::SetParam::param_value</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00063">63</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+lib/<link linkend="_steady_8hpp">steady.hpp</link></section>
+</section>

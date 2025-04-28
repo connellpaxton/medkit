@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structSocketConnectionInfo" xml:lang="en-US">
+<title>SocketConnectionInfo Struct Reference</title>
+<indexterm><primary>SocketConnectionInfo</primary></indexterm>
+Collaboration diagram for SocketConnectionInfo:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structSocketConnectionInfo__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const struct sockaddr * <link linkend="_structSocketConnectionInfo_1a0988efabede8cf55e008e1dc109044f6">addr</link></para>
+</listitem>
+            <listitem><para>socklen_t <link linkend="_structSocketConnectionInfo_1ab089c7e77237d04cb5e1bec7134ef696">addrlen</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_example_8cpp_source_1l00006">6</link> of file <link linkend="_example_8cpp_source">example.cpp</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structSocketConnectionInfo_1a0988efabede8cf55e008e1dc109044f6"/><section>
+    <title>addr</title>
+<indexterm><primary>addr</primary><secondary>SocketConnectionInfo</secondary></indexterm>
+<indexterm><primary>SocketConnectionInfo</primary><secondary>addr</secondary></indexterm>
+<para><computeroutput>const struct sockaddr* SocketConnectionInfo::addr</computeroutput></para><para>
+Definition at line <link linkend="_example_8cpp_source_1l00007">7</link> of file <link linkend="_example_8cpp_source">example.cpp</link>.</para>
+</section>
+<anchor xml:id="_structSocketConnectionInfo_1ab089c7e77237d04cb5e1bec7134ef696"/><section>
+    <title>addrlen</title>
+<indexterm><primary>addrlen</primary><secondary>SocketConnectionInfo</secondary></indexterm>
+<indexterm><primary>SocketConnectionInfo</primary><secondary>addrlen</secondary></indexterm>
+<para><computeroutput>socklen_t SocketConnectionInfo::addrlen</computeroutput></para><para>
+Definition at line <link linkend="_example_8cpp_source_1l00008">8</link> of file <link linkend="_example_8cpp_source">example.cpp</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+lib/src/<link linkend="_example_8cpp">example.cpp</link></section>
+</section>

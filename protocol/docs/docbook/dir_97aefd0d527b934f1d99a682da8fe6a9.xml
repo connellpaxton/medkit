@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_97aefd0d527b934f1d99a682da8fe6a9" xml:lang="en-US">
+<title>lib Directory Reference</title>
+<indexterm><primary>lib Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_95af220a3c72a42ac2ec70758694a9b2">net</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_a065c5f60305fee3569f887679366939">src</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_auth_8hpp">auth.hpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_common_8hpp">common.hpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_config_8hpp">config.hpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_MedKit_8hpp">MedKit.hpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_steady_8hpp">steady.hpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4" xml:lang="en-US">
+<title>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt; Struct Reference</title>
+<indexterm><primary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</primary></indexterm>
+Collaboration diagram for medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4_1adca9c0701bb4b4c35fa88dadd82c1cb0">NetworkInterfaceTrait</link> (const int &amp;fd_)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4_1a7d9c63a9b1e6f89b2948ad948201dd4a">connect</link> (const <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &amp;conn_info)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4_1aecd7d1c7357f0f45d3abe8260ab64f4e">send</link> (const uint8_t data, uint32_t len)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4_1a6422a00f220d5b3fe814908cd3d80743">read</link> (uint8_t *memory, uint32_t n, uint32_t *len)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">medkit::Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait_1ae0356a25c0b4a8428e7ef3fbaea44f62">connect</link> (const <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &amp;conn_info)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">medkit::Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait_1ad713f613b7eea365f3a008590895e1cb">send</link> (const uint8_t *data, uint32_t len)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">medkit::Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait_1af4eac42d61e2ad37dbdb809233d85300">read</link> (uint8_t *memory, uint32_t n, uint32_t *len)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>uses the Unix TCP socket to implement a medkit-compliant network object </para>
+<para>
+Definition at line <link linkend="_example_8cpp_source_1l00019">19</link> of file <link linkend="_example_8cpp_source">example.cpp</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4_1adca9c0701bb4b4c35fa88dadd82c1cb0"/><section>
+    <title>NetworkInterfaceTrait()</title>
+<indexterm><primary>NetworkInterfaceTrait</primary><secondary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</secondary></indexterm>
+<indexterm><primary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</primary><secondary>NetworkInterfaceTrait</secondary></indexterm>
+<para><computeroutput><link linkend="_structmedkit_1_1NetworkInterfaceTrait">medkit::NetworkInterfaceTrait</link>&lt; <link linkend="_example_8cpp_1ae6665db702f7f374879e1ccb5042c031">SocketHandle</link>, <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &gt;::NetworkInterfaceTrait (const int &amp; fd_)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_example_8cpp_source_1l00020">20</link> of file <link linkend="_example_8cpp_source">example.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_structmedkit_1_1NetworkInterfaceTrait_1ae0356a25c0b4a8428e7ef3fbaea44f62"/><section>
+    <title>connect()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>connect</primary><secondary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</secondary></indexterm>
+<indexterm><primary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</primary><secondary>connect</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">medkit::Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait">medkit::NetworkInterfaceTrait</link>&lt; <link linkend="_example_8cpp_1ae6665db702f7f374879e1ccb5042c031">SocketHandle</link>, <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &gt;::connect (const <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &amp; conn_info)</computeroutput></para></section>
+<anchor xml:id="_structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4_1a7d9c63a9b1e6f89b2948ad948201dd4a"/><section>
+    <title>connect()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>connect</primary><secondary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</secondary></indexterm>
+<indexterm><primary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</primary><secondary>connect</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait">medkit::NetworkInterfaceTrait</link>&lt; <link linkend="_example_8cpp_1ae6665db702f7f374879e1ccb5042c031">SocketHandle</link>, <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &gt;::connect (const <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &amp; conn_info)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_example_8cpp_source_1l00021">21</link> of file <link linkend="_example_8cpp_source">example.cpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1NetworkInterfaceTrait_1af4eac42d61e2ad37dbdb809233d85300"/><section>
+    <title>read()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>read</primary><secondary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</secondary></indexterm>
+<indexterm><primary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</primary><secondary>read</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">medkit::Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait">medkit::NetworkInterfaceTrait</link>&lt; <link linkend="_example_8cpp_1ae6665db702f7f374879e1ccb5042c031">SocketHandle</link>, <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &gt;::read (uint8_t * memory, uint32_t n, uint32_t * len)</computeroutput></para></section>
+<anchor xml:id="_structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4_1a6422a00f220d5b3fe814908cd3d80743"/><section>
+    <title>read()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>read</primary><secondary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</secondary></indexterm>
+<indexterm><primary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</primary><secondary>read</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait">medkit::NetworkInterfaceTrait</link>&lt; <link linkend="_example_8cpp_1ae6665db702f7f374879e1ccb5042c031">SocketHandle</link>, <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &gt;::read (uint8_t * memory, uint32_t n, uint32_t * len)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_example_8cpp_source_1l00027">27</link> of file <link linkend="_example_8cpp_source">example.cpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1NetworkInterfaceTrait_1ad713f613b7eea365f3a008590895e1cb"/><section>
+    <title>send()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>send</primary><secondary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</secondary></indexterm>
+<indexterm><primary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</primary><secondary>send</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">medkit::Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait">medkit::NetworkInterfaceTrait</link>&lt; <link linkend="_example_8cpp_1ae6665db702f7f374879e1ccb5042c031">SocketHandle</link>, <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &gt;::send (const uint8_t * data, uint32_t len)</computeroutput></para></section>
+<anchor xml:id="_structmedkit_1_1NetworkInterfaceTrait_3_01SocketHandle_00_01SocketConnectionInfo_01_4_1aecd7d1c7357f0f45d3abe8260ab64f4e"/><section>
+    <title>send()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>send</primary><secondary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</secondary></indexterm>
+<indexterm><primary>medkit::NetworkInterfaceTrait&lt; SocketHandle, SocketConnectionInfo &gt;</primary><secondary>send</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">Result</link> <link linkend="_structmedkit_1_1NetworkInterfaceTrait">medkit::NetworkInterfaceTrait</link>&lt; <link linkend="_example_8cpp_1ae6665db702f7f374879e1ccb5042c031">SocketHandle</link>, <link linkend="_structSocketConnectionInfo">SocketConnectionInfo</link> &gt;::send (const uint8_t data, uint32_t len)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_example_8cpp_source_1l00024">24</link> of file <link linkend="_example_8cpp_source">example.cpp</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+lib/src/<link linkend="_example_8cpp">example.cpp</link></section>
+</section>

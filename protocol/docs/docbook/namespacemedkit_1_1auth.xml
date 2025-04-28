@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacemedkit_1_1auth" xml:lang="en-US">
+<title>medkit::auth Namespace Reference</title>
+<indexterm><primary>medkit::auth</primary></indexterm>
+<para>
+
+<para><?linebreak?> The Network Packets sent during the authentication phase of the program </para>
+ 
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para><?linebreak?> The Network Packets sent during the authentication phase of the program </para>
+
+<para>Messages across this portion of the communication is done through an asynchronous request-response dichotomy. Control device wrters should take care to realize that due to safety concerns, a device may respect the guidance of a command but bound its realized change. Querying status of inputs is important to the proper function of nodes. </para>
+</section>
+</section>

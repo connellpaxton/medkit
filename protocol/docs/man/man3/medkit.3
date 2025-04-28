@@ -1,0 +1,90 @@
+.TH "medkit" 3 "Version medkit" "MedKit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+medkit
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBauth\fP"
+.br
+.RI "
+.br
+ The Network Packets sent during the authentication phase of the program "
+.ti -1c
+.RI "namespace \fBsteady\fP"
+.br
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBConfigurationProfileRequest\fP"
+.br
+.ti -1c
+.RI "struct \fBNetworkInterfaceTrait\fP"
+.br
+.ti -1c
+.RI "struct \fBNetworkInterfaceTrait< SocketHandle, SocketConnectionInfo >\fP"
+.br
+.ti -1c
+.RI "struct \fBStringTable\fP"
+.br
+.RI "limited to 2^(sizeof(size_type) characters allows lookups to be faster because length is a heuristic "
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBRole\fP { \fBSensor\fP = 0x01, \fBDelivery\fP = 0x02, \fBControl\fP = 0x04 }"
+.br
+.ti -1c
+.RI "enum \fBResult\fP { \fBSuccess\fP, \fBNetworkLost\fP }"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "constexpr uint32_t \fBMAX_DEVICES\fP = (1 << 26)"
+.br
+.in -1c
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBmedkit::Result\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BISuccess \fP
+.TP
+\f(BINetworkLost \fP
+.PP
+Definition at line \fB4\fP of file \fBMedKit\&.hpp\fP\&.
+.SS "enum \fBmedkit::Role\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\f(BISensor \fP
+.TP
+\f(BIDelivery \fP
+.TP
+\f(BIControl \fP
+.PP
+Definition at line \fB4\fP of file \fBcommon\&.hpp\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "uint32_t medkit::MAX_DEVICES = (1 << 26)\fR [constexpr]\fP"
+
+.PP
+Definition at line \fB9\fP of file \fBsteady\&.hpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MedKit from the source code\&.

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_Network_8hpp" xml:lang="en-US">
+<title>lib/net/Network.hpp File Reference</title>
+<indexterm><primary>lib/net/Network.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;../MedKit.hpp&quot;<?linebreak?>#include &lt;cstdint&gt;<?linebreak?></programlisting>Include dependency graph for Network.hpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="Network_8hpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmedkit_1_1NetworkInterfaceTrait">medkit::NetworkInterfaceTrait&lt; Handle, ConnectionInfo &gt;</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacemedkit">medkit</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

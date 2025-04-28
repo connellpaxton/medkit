@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmedkit_1_1ConfigurationProfileRequest" xml:lang="en-US">
+<title>medkit::ConfigurationProfileRequest&lt; size_type &gt; Struct Template Reference</title>
+<indexterm><primary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;config.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for medkit::ConfigurationProfileRequest&lt; size_type &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structmedkit_1_1ConfigurationProfileRequest__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link> = <link linkend="_structmedkit_1_1StringTable">StringTable</link>&lt;size_type&gt;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>uint8_t * <link linkend="_structmedkit_1_1ConfigurationProfileRequest_1adf84cf0a744546bd7ba26e44dc329406">data</link> (size_t &amp;total_size)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacemedkit_1aa7af9648005314e8fe667f7ea372c0b0">Role</link> <link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a8a0aa2d805e84bd772a79bd05cfc8d52">role</link>: 8</para>
+</listitem>
+            <listitem><para><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link> <link linkend="_structmedkit_1_1ConfigurationProfileRequest_1ab30748830abe53e46da49f34281cae4b">available_feature_list</link></para>
+</listitem>
+            <listitem><para><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link> <link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a42942a72c21314806b69f54275ae9fba">required_feature_list</link></para>
+</listitem>
+            <listitem><para><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link> <link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a8171d491f6d11911e88f27de0431bb6c">parameter_list</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>template&lt;typename size_type&gt;<?linebreak?>struct medkit::ConfigurationProfileRequest&lt; size_type &gt;</title></simplesect>
+<para>
+Definition at line <link linkend="_config_8hpp_source_1l00042">42</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+<section>
+<title>Member Typedef Documentation</title>
+<anchor xml:id="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72"/><section>
+    <title>string_table</title>
+<indexterm><primary>string_table</primary><secondary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</secondary></indexterm>
+<indexterm><primary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</primary><secondary>string_table</secondary></indexterm>
+<computeroutput>template&lt;typename size_type&gt; </computeroutput><para><computeroutput>using <link linkend="_structmedkit_1_1ConfigurationProfileRequest">medkit::ConfigurationProfileRequest</link>&lt; size_type &gt;::string_table = <link linkend="_structmedkit_1_1StringTable">StringTable</link>&lt;size_type&gt;</computeroutput></para><para>
+Definition at line <link linkend="_config_8hpp_source_1l00046">46</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_structmedkit_1_1ConfigurationProfileRequest_1adf84cf0a744546bd7ba26e44dc329406"/><section>
+    <title>data()</title>
+<indexterm><primary>data</primary><secondary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</secondary></indexterm>
+<indexterm><primary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</primary><secondary>data</secondary></indexterm>
+<computeroutput>template&lt;typename size_type&gt; </computeroutput><para><computeroutput>uint8_t * <link linkend="_structmedkit_1_1ConfigurationProfileRequest">medkit::ConfigurationProfileRequest</link>&lt; size_type &gt;::data (size_t &amp; total_size)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_config_8hpp_source_1l00052">52</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structmedkit_1_1ConfigurationProfileRequest_1ab30748830abe53e46da49f34281cae4b"/><section>
+    <title>available_feature_list</title>
+<indexterm><primary>available_feature_list</primary><secondary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</secondary></indexterm>
+<indexterm><primary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</primary><secondary>available_feature_list</secondary></indexterm>
+<computeroutput>template&lt;typename size_type&gt; </computeroutput><para><computeroutput><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link> <link linkend="_structmedkit_1_1ConfigurationProfileRequest">medkit::ConfigurationProfileRequest</link>&lt; size_type &gt;::available_feature_list</computeroutput></para><para>
+Definition at line <link linkend="_config_8hpp_source_1l00047">47</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1ConfigurationProfileRequest_1a8171d491f6d11911e88f27de0431bb6c"/><section>
+    <title>parameter_list</title>
+<indexterm><primary>parameter_list</primary><secondary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</secondary></indexterm>
+<indexterm><primary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</primary><secondary>parameter_list</secondary></indexterm>
+<computeroutput>template&lt;typename size_type&gt; </computeroutput><para><computeroutput><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link> <link linkend="_structmedkit_1_1ConfigurationProfileRequest">medkit::ConfigurationProfileRequest</link>&lt; size_type &gt;::parameter_list</computeroutput></para><para>
+Definition at line <link linkend="_config_8hpp_source_1l00049">49</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1ConfigurationProfileRequest_1a42942a72c21314806b69f54275ae9fba"/><section>
+    <title>required_feature_list</title>
+<indexterm><primary>required_feature_list</primary><secondary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</secondary></indexterm>
+<indexterm><primary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</primary><secondary>required_feature_list</secondary></indexterm>
+<computeroutput>template&lt;typename size_type&gt; </computeroutput><para><computeroutput><link linkend="_structmedkit_1_1ConfigurationProfileRequest_1a26f6ba85e611fe4207ad4adbb4c21e72">string_table</link> <link linkend="_structmedkit_1_1ConfigurationProfileRequest">medkit::ConfigurationProfileRequest</link>&lt; size_type &gt;::required_feature_list</computeroutput></para><para>
+Definition at line <link linkend="_config_8hpp_source_1l00048">48</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1ConfigurationProfileRequest_1a8a0aa2d805e84bd772a79bd05cfc8d52"/><section>
+    <title>role</title>
+<indexterm><primary>role</primary><secondary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</secondary></indexterm>
+<indexterm><primary>medkit::ConfigurationProfileRequest&lt; size_type &gt;</primary><secondary>role</secondary></indexterm>
+<computeroutput>template&lt;typename size_type&gt; </computeroutput><para><computeroutput><link linkend="_namespacemedkit_1aa7af9648005314e8fe667f7ea372c0b0">Role</link> <link linkend="_structmedkit_1_1ConfigurationProfileRequest">medkit::ConfigurationProfileRequest</link>&lt; size_type &gt;::role</computeroutput></para><para>
+Definition at line <link linkend="_config_8hpp_source_1l00045">45</link> of file <link linkend="_config_8hpp_source">config.hpp</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+lib/<link linkend="_config_8hpp">config.hpp</link></section>
+</section>

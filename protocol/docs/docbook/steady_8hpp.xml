@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_steady_8hpp" xml:lang="en-US">
+<title>lib/steady.hpp File Reference</title>
+<indexterm><primary>lib/steady.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;cstdint&gt;<?linebreak?></programlisting>Include dependency graph for steady.hpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="steady_8hpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request">medkit::steady::Request</link></para>
+</listitem>
+            <listitem><para>union <link linkend="_unionmedkit_1_1steady_1_1Request_1_1Content">medkit::steady::Request::Content</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reauthenticate">medkit::steady::Request::Content::Reauthenticate</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1Reconfigure">medkit::steady::Request::Content::Reconfigure</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1SetParam">medkit::steady::Request::Content::SetParam</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1ReadParam">medkit::steady::Request::Content::ReadParam</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1GetRequestStatus">medkit::steady::Request::Content::GetRequestStatus</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Request_1_1Content_1_1RequestSensorHook">medkit::steady::Request::Content::RequestSensorHook</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Response">medkit::steady::Response</link></para>
+</listitem>
+            <listitem><para>union <link linkend="_unionmedkit_1_1steady_1_1Response_1_1Content">medkit::steady::Response::Content</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData">medkit::steady::Response::Content::JobData</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1Param">medkit::steady::Response::Content::Param</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacemedkit">medkit</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacemedkit_1_1steady">medkit::steady</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>constexpr uint32_t <link linkend="_namespacemedkit_1a64539605c12492f3010d8a87f7fb1abc">medkit::MAX_DEVICES</link> = (1 &lt;&lt; 26)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

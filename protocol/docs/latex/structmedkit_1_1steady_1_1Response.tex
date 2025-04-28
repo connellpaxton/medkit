@@ -1,0 +1,106 @@
+\doxysection{medkit\+::steady\+::Response Struct Reference}
+\hypertarget{structmedkit_1_1steady_1_1Response}{}\label{structmedkit_1_1steady_1_1Response}\index{medkit::steady::Response@{medkit::steady::Response}}
+
+
+{\ttfamily \#include $<$steady.\+hpp$>$}
+
+
+
+Collaboration diagram for medkit\+::steady\+::Response\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{structmedkit_1_1steady_1_1Response__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{unionmedkit_1_1steady_1_1Response_1_1Content}{Content}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227}{Status}} \{ \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227a29e7835f4d6c553a19ebf4998f935234}{Ok}}
+, \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227ae3f6190ab1e7e7549c298fe373db5956}{Not\+Permitted}} = 0x01
+, \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227a9749ff0e3deecdf8ba26bd38a64691db}{Not\+Found}} = 0x02
+, \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227aea5037fdd737bac63ca03f0661c670de}{Unavailable}} = 0x04
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_ae3508f6d032b24fd4e8a0f9fba734fd3}{magic}} \mbox{[}4\mbox{]}
+\item 
+enum \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227}{medkit\+::steady\+::\+Response\+::\+Status}} \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_a2ab2039ebe90dbc531dfc8db7a7bc9f6}{status}}
+\item 
+union \mbox{\hyperlink{unionmedkit_1_1steady_1_1Response_1_1Content}{medkit\+::steady\+::\+Response\+::\+Content}} \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_a2b726051c1457eca9bba1efffe63ebfb}{content}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{steady_8hpp_source_l00090}{90}} of file \mbox{\hyperlink{steady_8hpp_source}{steady.\+hpp}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227}\index{medkit::steady::Response@{medkit::steady::Response}!Status@{Status}}
+\index{Status@{Status}!medkit::steady::Response@{medkit::steady::Response}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily \label{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227} 
+enum \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227}{medkit\+::steady\+::\+Response\+::\+Status}}}
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ok@{Ok}!medkit::steady::Response@{medkit::steady::Response}}\index{medkit::steady::Response@{medkit::steady::Response}!Ok@{Ok}}}\Hypertarget{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227a29e7835f4d6c553a19ebf4998f935234}\label{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227a29e7835f4d6c553a19ebf4998f935234} 
+Ok&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotPermitted@{NotPermitted}!medkit::steady::Response@{medkit::steady::Response}}\index{medkit::steady::Response@{medkit::steady::Response}!NotPermitted@{NotPermitted}}}\Hypertarget{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227ae3f6190ab1e7e7549c298fe373db5956}\label{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227ae3f6190ab1e7e7549c298fe373db5956} 
+Not\+Permitted&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotFound@{NotFound}!medkit::steady::Response@{medkit::steady::Response}}\index{medkit::steady::Response@{medkit::steady::Response}!NotFound@{NotFound}}}\Hypertarget{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227a9749ff0e3deecdf8ba26bd38a64691db}\label{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227a9749ff0e3deecdf8ba26bd38a64691db} 
+Not\+Found&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unavailable@{Unavailable}!medkit::steady::Response@{medkit::steady::Response}}\index{medkit::steady::Response@{medkit::steady::Response}!Unavailable@{Unavailable}}}\Hypertarget{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227aea5037fdd737bac63ca03f0661c670de}\label{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227aea5037fdd737bac63ca03f0661c670de} 
+Unavailable&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{steady_8hpp_source_l00092}{92}} of file \mbox{\hyperlink{steady_8hpp_source}{steady.\+hpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structmedkit_1_1steady_1_1Response_a2b726051c1457eca9bba1efffe63ebfb}\index{medkit::steady::Response@{medkit::steady::Response}!content@{content}}
+\index{content@{content}!medkit::steady::Response@{medkit::steady::Response}}
+\doxysubsubsection{\texorpdfstring{content}{content}}
+{\footnotesize\ttfamily \label{structmedkit_1_1steady_1_1Response_a2b726051c1457eca9bba1efffe63ebfb} 
+union \mbox{\hyperlink{unionmedkit_1_1steady_1_1Response_1_1Content}{medkit\+::steady\+::\+Response\+::\+Content}} medkit\+::steady\+::\+Response\+::content}
+
+\Hypertarget{structmedkit_1_1steady_1_1Response_ae3508f6d032b24fd4e8a0f9fba734fd3}\index{medkit::steady::Response@{medkit::steady::Response}!magic@{magic}}
+\index{magic@{magic}!medkit::steady::Response@{medkit::steady::Response}}
+\doxysubsubsection{\texorpdfstring{magic}{magic}}
+{\footnotesize\ttfamily \label{structmedkit_1_1steady_1_1Response_ae3508f6d032b24fd4e8a0f9fba734fd3} 
+uint8\+\_\+t medkit\+::steady\+::\+Response\+::magic\mbox{[}4\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{steady_8hpp_source_l00091}{91}} of file \mbox{\hyperlink{steady_8hpp_source}{steady.\+hpp}}.
+
+\Hypertarget{structmedkit_1_1steady_1_1Response_a2ab2039ebe90dbc531dfc8db7a7bc9f6}\index{medkit::steady::Response@{medkit::steady::Response}!status@{status}}
+\index{status@{status}!medkit::steady::Response@{medkit::steady::Response}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \label{structmedkit_1_1steady_1_1Response_a2ab2039ebe90dbc531dfc8db7a7bc9f6} 
+enum \mbox{\hyperlink{structmedkit_1_1steady_1_1Response_a9e78857e7f52306702bee18baf8c9227}{medkit\+::steady\+::\+Response\+::\+Status}} medkit\+::steady\+::\+Response\+::status}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{steady_8hpp}{steady.\+hpp}}\end{DoxyCompactItemize}

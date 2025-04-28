@@ -1,0 +1,63 @@
+.TH "medkit::StringTable< size_type >" 3 "Version medkit" "MedKit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+medkit::StringTable< size_type > \- limited to 2^(sizeof(size_type) characters allows lookups to be faster because length is a heuristic  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <config\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "uint8_t * \fBdata\fP (size_t &total_size)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "size_t \fBn_entries\fP"
+.br
+.ti -1c
+.RI "uint8_t * \fBlengths\fP"
+.br
+.ti -1c
+.RI "uint8_t * \fBstrs\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename size_type>
+.br
+struct medkit::StringTable< size_type >"limited to 2^(sizeof(size_type) characters allows lookups to be faster because length is a heuristic 
+.PP
+Definition at line \fB12\fP of file \fBconfig\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename size_type> uint8_t * \fBmedkit::StringTable\fP< size_type >::data (size_t & total_size)\fR [inline]\fP"
+@breif 0 sizeof(size_type) * 2 + n_entries + sum(lengths) [total_length][n_entries][lengths\&.\&.\&.\&.\&.][entries\&.\&.\&.\&.\&.] 
+.PP
+Definition at line \fB21\fP of file \fBconfig\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename size_type> uint8_t* \fBmedkit::StringTable\fP< size_type >::lengths"
+
+.PP
+Definition at line \fB14\fP of file \fBconfig\&.hpp\fP\&.
+.SS "template<typename size_type> size_t \fBmedkit::StringTable\fP< size_type >::n_entries"
+
+.PP
+Definition at line \fB13\fP of file \fBconfig\&.hpp\fP\&.
+.SS "template<typename size_type> uint8_t* \fBmedkit::StringTable\fP< size_type >::strs"
+
+.PP
+Definition at line \fB15\fP of file \fBconfig\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MedKit from the source code\&.

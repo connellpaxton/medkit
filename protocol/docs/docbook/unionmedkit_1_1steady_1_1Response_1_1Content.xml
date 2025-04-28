@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_unionmedkit_1_1steady_1_1Response_1_1Content" xml:lang="en-US">
+<title>medkit::steady::Response::Content Union Reference</title>
+<indexterm><primary>medkit::steady::Response::Content</primary></indexterm>
+<para>
+<computeroutput>#include &lt;steady.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for medkit::steady::Response::Content:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="unionmedkit_1_1steady_1_1Response_1_1Content__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1JobData">JobData</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1Param">Param</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>uint64_t <link linkend="_unionmedkit_1_1steady_1_1Response_1_1Content_1a69f1c7983a97d257db15ac50003a0e05">raw</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1Param">medkit::steady::Response::Content::Param</link> <link linkend="_unionmedkit_1_1steady_1_1Response_1_1Content_1a0779d71488e73909ef802076f3515eea">param</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00099">99</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_unionmedkit_1_1steady_1_1Response_1_1Content_1a0779d71488e73909ef802076f3515eea"/><section>
+    <title>param</title>
+<indexterm><primary>param</primary><secondary>medkit::steady::Response::Content</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response::Content</primary><secondary>param</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_structmedkit_1_1steady_1_1Response_1_1Content_1_1Param">medkit::steady::Response::Content::Param</link> medkit::steady::Response::Content::param</computeroutput></para></section>
+<anchor xml:id="_unionmedkit_1_1steady_1_1Response_1_1Content_1a69f1c7983a97d257db15ac50003a0e05"/><section>
+    <title>raw</title>
+<indexterm><primary>raw</primary><secondary>medkit::steady::Response::Content</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response::Content</primary><secondary>raw</secondary></indexterm>
+<para><computeroutput>uint64_t medkit::steady::Response::Content::raw</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00100">100</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<para>
+The documentation for this union was generated from the following file:</para>
+lib/<link linkend="_steady_8hpp">steady.hpp</link></section>
+</section>

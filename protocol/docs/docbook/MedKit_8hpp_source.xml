@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_MedKit_8hpp_source" xml:lang="en-US">
+<title>MedKit.hpp</title>
+<indexterm><primary>lib/MedKit.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_MedKit_8hpp_source_1l00001"/>00001 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+<anchor xml:id="_MedKit_8hpp_source_1l00002"/>00002 
+<anchor xml:id="_MedKit_8hpp_source_1l00003"/>00003 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacemedkit">medkit</link>&#32;{
+<anchor xml:id="_MedKit_8hpp_source_1l00004"/><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">00004</link> &#32;&#32;<emphasis role="keyword">enum</emphasis>&#32;<link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81">Result</link>&#32;{
+<anchor xml:id="_MedKit_8hpp_source_1l00005"/><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81acb44411c897094df208bb9112124067d">00005</link> &#32;&#32;&#32;&#32;<link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81acb44411c897094df208bb9112124067d">Success</link>,
+<anchor xml:id="_MedKit_8hpp_source_1l00006"/><link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81ac55507233ca08a3dedf52e2246b34fa3">00006</link> &#32;&#32;&#32;&#32;<link linkend="_namespacemedkit_1ae84f11154d20f258f62c4edd432cae81ac55507233ca08a3dedf52e2246b34fa3">NetworkLost</link>,
+<anchor xml:id="_MedKit_8hpp_source_1l00007"/>00007 &#32;&#32;};
+<anchor xml:id="_MedKit_8hpp_source_1l00008"/>00008 };
+</programlisting></section>

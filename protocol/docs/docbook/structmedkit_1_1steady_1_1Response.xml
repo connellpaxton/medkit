@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structmedkit_1_1steady_1_1Response" xml:lang="en-US">
+<title>medkit::steady::Response Struct Reference</title>
+<indexterm><primary>medkit::steady::Response</primary></indexterm>
+<para>
+<computeroutput>#include &lt;steady.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for medkit::steady::Response:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structmedkit_1_1steady_1_1Response__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>union <link linkend="_unionmedkit_1_1steady_1_1Response_1_1Content">Content</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227">Status</link> { <link linkend="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227a29e7835f4d6c553a19ebf4998f935234">Ok</link>
+, <link linkend="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227ae3f6190ab1e7e7549c298fe373db5956">NotPermitted</link> = 0x01
+, <link linkend="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227a9749ff0e3deecdf8ba26bd38a64691db">NotFound</link> = 0x02
+, <link linkend="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227aea5037fdd737bac63ca03f0661c670de">Unavailable</link> = 0x04
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>uint8_t <link linkend="_structmedkit_1_1steady_1_1Response_1ae3508f6d032b24fd4e8a0f9fba734fd3">magic</link> [4]</para>
+</listitem>
+            <listitem><para>enum <link linkend="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227">medkit::steady::Response::Status</link> <link linkend="_structmedkit_1_1steady_1_1Response_1a2ab2039ebe90dbc531dfc8db7a7bc9f6">status</link></para>
+</listitem>
+            <listitem><para>union <link linkend="_unionmedkit_1_1steady_1_1Response_1_1Content">medkit::steady::Response::Content</link> <link linkend="_structmedkit_1_1steady_1_1Response_1a2b726051c1457eca9bba1efffe63ebfb">content</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00090">90</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227"/><section>
+    <title>Status</title>
+<indexterm><primary>Status</primary><secondary>medkit::steady::Response</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response</primary><secondary>Status</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227">medkit::steady::Response::Status</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Ok</primary><secondary>medkit::steady::Response</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response</primary><secondary>Ok</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227a29e7835f4d6c553a19ebf4998f935234"/>Ok</entry><entry></entry></row><row><entry><indexterm><primary>NotPermitted</primary><secondary>medkit::steady::Response</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response</primary><secondary>NotPermitted</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227ae3f6190ab1e7e7549c298fe373db5956"/>NotPermitted</entry><entry></entry></row><row><entry><indexterm><primary>NotFound</primary><secondary>medkit::steady::Response</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response</primary><secondary>NotFound</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227a9749ff0e3deecdf8ba26bd38a64691db"/>NotFound</entry><entry></entry></row><row><entry><indexterm><primary>Unavailable</primary><secondary>medkit::steady::Response</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response</primary><secondary>Unavailable</secondary></indexterm>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227aea5037fdd737bac63ca03f0661c670de"/>Unavailable</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="_steady_8hpp_source_1l00092">92</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1a2b726051c1457eca9bba1efffe63ebfb"/><section>
+    <title>content</title>
+<indexterm><primary>content</primary><secondary>medkit::steady::Response</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response</primary><secondary>content</secondary></indexterm>
+<para><computeroutput>union <link linkend="_unionmedkit_1_1steady_1_1Response_1_1Content">medkit::steady::Response::Content</link> medkit::steady::Response::content</computeroutput></para></section>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1ae3508f6d032b24fd4e8a0f9fba734fd3"/><section>
+    <title>magic</title>
+<indexterm><primary>magic</primary><secondary>medkit::steady::Response</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response</primary><secondary>magic</secondary></indexterm>
+<para><computeroutput>uint8_t medkit::steady::Response::magic[4]</computeroutput></para><para>
+Definition at line <link linkend="_steady_8hpp_source_1l00091">91</link> of file <link linkend="_steady_8hpp_source">steady.hpp</link>.</para>
+</section>
+<anchor xml:id="_structmedkit_1_1steady_1_1Response_1a2ab2039ebe90dbc531dfc8db7a7bc9f6"/><section>
+    <title>status</title>
+<indexterm><primary>status</primary><secondary>medkit::steady::Response</secondary></indexterm>
+<indexterm><primary>medkit::steady::Response</primary><secondary>status</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_structmedkit_1_1steady_1_1Response_1a9e78857e7f52306702bee18baf8c9227">medkit::steady::Response::Status</link> medkit::steady::Response::status</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+lib/<link linkend="_steady_8hpp">steady.hpp</link></section>
+</section>

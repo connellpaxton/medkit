@@ -1,0 +1,43 @@
+.TH "medkit::NetworkInterfaceTrait< Handle, ConnectionInfo >" 3 "Version medkit" "MedKit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+medkit::NetworkInterfaceTrait< Handle, ConnectionInfo >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Network\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBmedkit::Result\fP \fBconnect\fP (const ConnectionInfo &conn_info)"
+.br
+.ti -1c
+.RI "\fBmedkit::Result\fP \fBsend\fP (const uint8_t *data, uint32_t len)"
+.br
+.ti -1c
+.RI "\fBmedkit::Result\fP \fBread\fP (uint8_t *memory, uint32_t n, uint32_t *len)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename Handle, typename ConnectionInfo>
+.br
+struct medkit::NetworkInterfaceTrait< Handle, ConnectionInfo >"
+.PP
+Definition at line \fB9\fP of file \fBNetwork\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename Handle, typename ConnectionInfo> \fBmedkit::Result\fP \fBmedkit::NetworkInterfaceTrait\fP< Handle, ConnectionInfo >::connect (const ConnectionInfo & conn_info)"
+
+.SS "template<typename Handle, typename ConnectionInfo> \fBmedkit::Result\fP \fBmedkit::NetworkInterfaceTrait\fP< Handle, ConnectionInfo >::read (uint8_t * memory, uint32_t n, uint32_t * len)"
+
+.SS "template<typename Handle, typename ConnectionInfo> \fBmedkit::Result\fP \fBmedkit::NetworkInterfaceTrait\fP< Handle, ConnectionInfo >::send (const uint8_t * data, uint32_t len)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MedKit from the source code\&.
