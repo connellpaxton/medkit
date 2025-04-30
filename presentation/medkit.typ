@@ -12,7 +12,7 @@
 
 Should be *flexible* enough to incorporate arbitrary medical device
 systems of reasonable *configuration*, and accomadate
-*diverse feature-sets* through modular
+*diverse feature-sets* through modular design.
 ], framed[
   #stress("(II) The Bridge Device")
   #line(length: 100%)
