@@ -22,7 +22,7 @@ that do not implement #stress("The Protocol").
 Exploits existing (mechanical or electric) user interface
 of the device. Allows for *1st or 3rd parties* to extend a
 device without redesigning hardware.
-])
+])]
 
 #include("protocol.typ")
 #include("bridge.typ")

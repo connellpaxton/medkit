@@ -27,7 +27,7 @@
 
 #include("intro.typ")
 #include("medkit.typ")
-
+#include("demo.typ")
 
 /*
 https://www.healthsystemtracker.org/brief/the-burden-of-medical-debt-in-the-united-states/

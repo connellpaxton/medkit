@@ -4,18 +4,35 @@
   theme: "darky",
 )
 
-#slide(title: "YOUR TITLE HERE")[
-TEXT ABOVE A LINE CAN BE DONE LINE THIS
+#title-slide[
+  (I) The Protocol
+]
+
+#slide(title:"Protocol: Overview",
+grid(columns:(1fr, 1fr),[
+- 3 "Roles"
+- 3 Stages
+  1. Authentication
+  2. Configuration
+  3. Steady State
+],
+align(center, image(height: 100%, "protodiag.png"))
+))
+
+#slide(title: "The Protocol: Implementation")[
+*Implementation*
 #line(length: 100%)
-
-*bold text*
-- Un-numbered lists
-  - with children
-+ Numbered lists
-  + with children
+- Reference Implementation: C++
+  - No STL or stdlib dependencies - key for embedded
+  - NetworkInterfaceTrait
+- Lots of abstraction, but low memory footprint
+- Configuration Table Layout: access-time-optimized
+- High-Frequency Packet Layout: size-optimized
 ]
 
-#slide(title: "YOUR TITLE HERE FOR THIS SLIDE")[
-  This is how images can be inserted:
-  #image("pump.jpg", width: 50%)
-]
+#slide(title: "The Protocol: Implementation: Request", align(center)[
+#figure(
+  image("res.png"),
+  caption: [C++ Struct Diagram for the Request Packet],
+)
+])

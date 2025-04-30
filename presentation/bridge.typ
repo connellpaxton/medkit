@@ -9,6 +9,7 @@
 ]
 
 #slide(title: "The Bridge: The Problem")[
+#image("boxes.jpg")
 *Intuition: The Problem*
 #line(length: 100%)
 - Systems are just arrows and boxes!
@@ -65,7 +66,7 @@
 - (Sensor) We can splice in wires into output streams and translate dispatch
   information.
 - Due to the flexible nature of the protocol, we don't have to do much
-to reach compliance.
+	to reach compliance.
 ]
 
 #include("bridge-hardware.typ")

@@ -3,6 +3,18 @@
 #show: typslides.with(
   theme: "darky",
 )
+
+#title-slide[
+  The Bridge: Casing
+]
+#slide(title: "The Bridge: Casing", grid(columns:(1fr, 2fr), [
+- PLA Plastic
+- Seperate Dividers
+- Open-Top Design
+  - Easy Replacement
+- Dense Filiment
+],align(center, grid(rows: (1fr, 1fr), image("case.png"), image("top.png"))
+)))
 /*
 #slide(title: "YOUR TITLE HERE")[
 TEXT ABOVE A LINE CAN BE DONE LINE THIS

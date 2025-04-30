@@ -3,21 +3,19 @@
 #front-slide(
   title: "M.E.D.K.I.T",
   subtitle: "Medical and Embedded Device Konfiguration and Integration Technology",
-  authors: [Conál (_angl._ Connell) Paxton, *[Vagos]*, *[Jaime]*],
+  authors: [*Conál* (_angl._ Connell) *Paxton* | *Evangelos Loukedes* | *Jaime Santoro*],
   info: [#link("https://github.com/connellpaxton/medkit/")]
 )
 
 
 #slide(title: "The Team")[
-Team
+#stress("The Team")
 #line(length: 100%)
-  *Conál*: Software, Systems-level Design, Documentation
+  *Conál*: Embeddded & Network Software, Systems-level Design, Documentation
   
-*please add what you did after the colon and it will show in the presentation*  
+  *Jaime*: Power Supply Hardware Design, Hardware Procurement
 
-  *Jaime*:  
-
-  *Vagos*: 
+  *Vagos*: Casing Design
 ]
 
 #title-slide[
