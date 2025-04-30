@@ -15,6 +15,7 @@ grid(columns:(1fr, 1fr),[
   1. Authentication
   2. Configuration
   3. Steady State
+- Flexibility through "Feature Sets"
 ],
 align(center, image(height: 100%, "protodiag.png"))
 ))
