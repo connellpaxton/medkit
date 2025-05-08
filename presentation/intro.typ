@@ -41,7 +41,6 @@
       [>\$1,000], [14 million],
       [>\$10,000], [3 million],
   )))
-]
 
 #slide(title: "Problem")[
 *Case Study: Insulin Pumps*
